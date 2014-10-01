@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lecture_02.handout.aux
+The style file: newapa.bst
+Database file #1: $HOME/endnote/phd_biblio.bib
+You've used 19 entries,
+            2708 wiz_defined-function locations,
+            725 strings with 7892 characters,
+and the built_in function-call counts, 8759 in all, are:
+= -- 815
+> -- 360
+< -- 14
++ -- 129
+- -- 127
+* -- 869
+:= -- 1647
+add.period$ -- 60
+call.type$ -- 19
+change.case$ -- 154
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 312
+empty$ -- 590
+format.name$ -- 160
+if$ -- 1595
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 98
+num.names$ -- 80
+pop$ -- 93
+preamble$ -- 1
+purify$ -- 174
+quote$ -- 0
+skip$ -- 214
+stack$ -- 0
+substring$ -- 656
+swap$ -- 76
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 112
+warning$ -- 0
+while$ -- 91
+width$ -- 0
+write$ -- 253
