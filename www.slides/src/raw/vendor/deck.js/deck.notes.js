@@ -735,7 +735,7 @@ only toggle the notes panel for this cloned window.
 			//is it an image?
 			if( $handout.not('img').length > 0 && $handout.not('.img').length > 0 ) {
 				//it's not an image
-				$handoutContainer.append('<div class="handout">'+$handout.html().trim+'</div>');
+				$handoutContainer.append('<div class="handout">'+$handout.html().trim()+'</div>');
 				// add in a blank line (for latex paragraph) unless .ctd is present
 				if( !$handouts.eq(idx+1).hasClass('ctd') ) {
 					$handoutContainer.append("<div>&nbsp;</div>");

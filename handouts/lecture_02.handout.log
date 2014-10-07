@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  18 SEP 2014 11:06
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  7 OCT 2014 22:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1080,13 +1080,13 @@ LaTeX Info: Redefining \nameref on input line 30.
 
 LaTeX Info: Redefining \Ref on input line 30.
 
-Underfull \hbox (badness 5403) in paragraph at lines 95--96
+Underfull \hbox (badness 5403) in paragraph at lines 103--104
 []\EU1/LinuxLibertineO(0)/m/n/12 rigidity—‘objects are interpreted as moving
  []
 
 File: img/spelke_1995_fig1.neg.png Graphic file (type QTm)
 <use  "img/spelke_1995_fig1.neg.png" >
-Overfull \hbox (13.86789pt too wide) in paragraph at lines 131--132
+Overfull \hbox (13.86789pt too wide) in paragraph at lines 153--154
  [] 
  []
 
@@ -1095,37 +1095,37 @@ Overfull \hbox (13.86789pt too wide) in paragraph at lines 131--132
 ]
 File: img/baillargeon_1987_fig1.neg.png Graphic file (type QTm)
  <use  "img/baillargeon_1987_fig1.neg.png" >
-Overfull \hbox (17.18027pt too wide) in paragraph at lines 134--135
+Overfull \hbox (17.18027pt too wide) in paragraph at lines 156--157
  [] 
  []
 
 File: img/baillargeon_1987_fig2.neg.png Graphic file (type QTm)
 <use  "img/baillargeon_1987_fig2.neg.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 []\EU1/LinuxLibertineO(0)/m/n/12 Interpreting violation-of-expectation experi-
  []
 
 [2]
-Underfull \hbox (badness 6876) in paragraph at lines 212--212
+Underfull \hbox (badness 6876) in paragraph at lines 237--237
  |[]\EU1/LinuxLibertineO(0)/bx/n/14.4 Like Knowledge and Like Not
  []
 
 (./lecture_02.handout.bbl [3])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./lecture_02.handout.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 226.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 23776 strings out of 493938
- 455023 string characters out of 6148856
- 484564 words of memory out of 5000000
- 26813 multiletter control sequences out of 15000+600000
+ 23772 strings out of 493938
+ 454975 string characters out of 6148856
+ 485596 words of memory out of 5000000
+ 26809 multiletter control sequences out of 15000+600000
  4897 words of font info for 43 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 48i,5n,80p,667b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,5n,80p,667b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on lecture_02.handout.pdf (4 pages).
