@@ -20,11 +20,12 @@
   display: none;
   overflow-y: auto;
   overflow-x: none;
+  white-space: pre-wrap;
 }
 .deck-notes.notes-export, .deck-handout {
   left: 25px;
   width: 800px;
-  
+  white-space: pre-wrap;
 }
 .deck-notes .deck-notes-header {
   width: 100%;
@@ -45,6 +46,7 @@
 }
 .deck-notes .notes, .deck-handout .handout {
   display: block;
+  white-space: pre-wrap;
 }
 
 @media print {

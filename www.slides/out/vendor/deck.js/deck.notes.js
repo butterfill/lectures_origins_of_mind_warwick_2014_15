@@ -700,15 +700,15 @@ only toggle the notes panel for this cloned window.
 			}
 			if( last_slide_id != -1 && last_slide_id != slide_id ) {
 				// $notesContainer.append('<div class="notes-header for-'+slide_id+'">Notes for '+slide_id+':</div>');
-				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
-				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
+				// $notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
+				// $notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
 				//tex requires that we esacpe _ characters
 				var tex_slide_id = (slide_id+'').replace(/_/g,'\\_');
 				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">\\subsection{'+tex_slide_id+'}</div>');
 			}
 			//insert note preserving classes
 			var cls = $note.attr('class') + (" for-"+slide_id);
-			$notesContainer.append('<div class="'+cls+'">'+$note.html()+'</div>');
+			$notesContainer.append('<div class="'+cls+'">'+$note.html().trim()+'</div>');
 			// add in a blank line (for latex paragraph) unless .ctd is present
 			if( !$notes.eq(idx+1).hasClass('ctd') ) {
 				$notesContainer.append('<div class="notes for-'+slide_id+'">&nbsp;</div>');
@@ -735,7 +735,7 @@ only toggle the notes panel for this cloned window.
 			//is it an image?
 			if( $handout.not('img').length > 0 && $handout.not('.img').length > 0 ) {
 				//it's not an image
-				$handoutContainer.append('<div class="handout">'+$handout.html()+'</div>');
+				$handoutContainer.append('<div class="handout">'+$handout.html().trim+'</div>');
 				// add in a blank line (for latex paragraph) unless .ctd is present
 				if( !$handouts.eq(idx+1).hasClass('ctd') ) {
 					$handoutContainer.append("<div>&nbsp;</div>");

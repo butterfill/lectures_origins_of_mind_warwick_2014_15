@@ -31,6 +31,11 @@ and do the cloning just once.  This ensures that the slide is cloned in its late
       var selector = $el.attr('data-which');
       var $to_clone = $(selector);
       var theClone = $to_clone.clone();
+      if( $to_clone.length === 0 ) {
+        theClone = $('<p>[*not found, selector='+selector+'*]</p>');
+      }
+      
+      console.log('cloning: found = '+$to_clone.length)
 
       //sort out subslides by removing the slide class from elements in the clone 
       // (may create complications if slide not yet been fully revealled)

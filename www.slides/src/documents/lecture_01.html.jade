@@ -3,7 +3,7 @@ layout: 'default2'
 title: 'Lecture 01'
 weburl: ''
 units: []
-lecture_date: '2013/10/3'
+lecture_date: '2014/10/2'
 ---
 
 include ../../fragments/lecture_mixins
@@ -12,6 +12,10 @@ include ../../fragments/unit_mixins
 - var images = get_images('bees')
 
 +title_slide({document:document, images:images})
+
+//- *TODO* need to get some preliminary sense of what core knowledge is into this lecture
+//- can't get very far without explaining it.
+//- provisionally it's defined as whatever underpins abilities to discriminate possible from impossible ...
 
 // the question
 +insert_unit({unit:'001', title_slide:false, images:images, handout:true})
@@ -55,8 +59,8 @@ include ../../fragments/unit_mixins
   .notes: :t()
     I need to set you up for your first seminar, which starts next week.
     Recall these findings ...
-+slide
-  .slide-clone(data-what='032-discrepant-findings')
+section.slide
+  .slide-clone(data-which='#032-discrepant-findings')
   .notes: :t()
     I want you to look at this discrepancy more carefully in your first seminar.
     This is partly because the discrepancy matters, and partly because part of doing this module

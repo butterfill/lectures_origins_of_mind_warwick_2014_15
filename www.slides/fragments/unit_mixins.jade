@@ -25,6 +25,8 @@
 //- -------------
 
 mixin _slide_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
   if ('bkg' in p)
     img.bkg(src='/img/#{p.bkg}')
   .words
@@ -46,7 +48,9 @@ mixin slide(p)
 mixin middle(p)
   .container_12
     - var width = 12;
-    if p && p.width
+    if typeof(p) === 'undefined'
+      - p = {}
+    if ('width' in p)
       width = p.width
     div(class="grid_#{width} #{width<12 ? 'push_'+((12-width)/2) : ''}")
       .words: .middle
@@ -54,7 +58,9 @@ mixin middle(p)
 
 mixin slide_middle(p)
   section.slide
-    if p && p.bkg
+    if typeof(p) === 'undefined'
+      - p = {}
+    if ('bkg' in p)
       img.bkg(src='/img/#{p.bkg}')
     +middle
       block
@@ -432,6 +438,10 @@ mixin highlight-row-remove_(what, color, container)
 mixin highlight-row-remove(what, color, container)
   +highlight-row-remove_(what, color, container)
   +anim_end()
+mixin unhighlight-row(what, color, container)
+  +highlight-row-remove(what, color, container)
+mixin unhighlight-row_(what, color, container)
+  +highlight-row-remove_(what, color, container)
 
 
 //
