@@ -49,6 +49,11 @@ Fodor, J. (2000).
   computational psychology}.
 \newblock Representation and mind. MIT Press, Cambridge, Mass.
 
+\bibitem[G{\'o}mez, 2005]{gomez:2005_species}
+G{\'o}mez, J.-C. (2005).
+\newblock Species comparative studies and cognitive development.
+\newblock {\em Trends in Cognitive Sciences}, 9(3):118--125.
+
 \bibitem[Haith, 1998]{Haith:1998aq}
 Haith, M. (1998).
 \newblock Who put the cog in infant cognition? is rich interpretation too
@@ -150,5 +155,11 @@ Spelke, E.~S., von Hofsten, C., and Kestenbaum, R. (1989).
 Triana, E. and Pasnak, R. (1981).
 \newblock Object permanence in cats and dogs.
 \newblock {\em Animal Learning \& Behavior}, 9(1):135--139.
+
+\bibitem[Wang et~al., 2004]{wang:2004_young}
+Wang, S.-h., Baillargeon, R., and Brueckner, L. (2004).
+\newblock Young infants' reasoning about hidden objects: evidence from
+  violation-of-expectation tasks with test trials only.
+\newblock {\em Cognition}, 93(3):167--198.
 
 \end{thebibliography}

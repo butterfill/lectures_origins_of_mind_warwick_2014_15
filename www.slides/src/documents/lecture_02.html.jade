@@ -15,6 +15,9 @@ include ../../fragments/origins_mixins
 
 mixin title_slide({document:document, images:images})
 
+
++slide_middle
+  p.center peer review: what are you looking for?
   
 +slide_middle
   .notes: :t()
@@ -81,39 +84,43 @@ mixin title_slide({document:document, images:images})
   .notes: :t()
     We looked at each of these in turn and found evidence for two discoveries.
     First infants meet these requirements in the first months of their lives.
-  .slide
-    p Principles of Object Perception
-    ul
-      li cohesion
-        span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
-      li boundedness
-        span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
-        // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
-      li rigidity
-        span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
-      li no action at a distance
-        span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
-    p.right (Spelke 1990)
-    .notes: :t()
-      Second, a single set of principles is formally adequate to explain how someone could 
-      meet these requirements, and to describe infants' abilities with segmentation, 
-      representing objects as persisting and tracking objects' interactions.
-    .notes: :t()
-      This left us with the a question about mechanism: What is the relation between these principles
-      and infants' competence?
-      A natuaral answer is the Simple View: #{origins.simple_view}.
-    .notes: :t()
-      However, as we saw, the Simple View must be wrong because it generates incorrect predictions.
-      This was the lesson of the discrepancy bewteen looking and search measures for both 
-      infants' abilities to represent objects as persisting and their abilities to track causal 
-      interactions.
-    .notes: :t()
-      As I've just been arguing, the failure of the Simple View presents us with a problem.
-      The problem is to understand the nature of infants' apprehension of the principles given
-      that it doesn't involve knowledge.
-      This is a problem that will permeate our discussion of the origins of mind because it 
-      problems of this form come up again and again in different domains. 
-      It isn't the only problem we'll encounter, but none of the problems are more important or more
-      general than this one.
-      
-      
++slide
+  p Principles of Object Perception
+  ul
+    li cohesion
+      span.step2.grey-text —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+    li boundedness
+      span.step3.grey-text —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+      // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+    li rigidity
+      span.step4.grey-text —‘objects are interpreted as moving rigidly if such an interpretation exists’
+    li no action at a distance
+      span.step5.grey-text —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+  p.right (Spelke 1990)
+  .notes: :t()
+    Second, a single set of principles is formally adequate to explain how someone could 
+    meet these requirements, and to describe infants' abilities with segmentation, 
+    representing objects as persisting and tracking objects' interactions.
+  .notes: :t()
+    This left us with the a question about mechanism: What is the relation between these principles
+    and infants' competence?
++slide_middle
+  p.center.false the simple view
+  .notes: :t()
+    A natuaral answer is the Simple View: #{origins.simple_view}
+  +line-through('.false')
+  .notes: :t()
+    However, as we saw, the Simple View must be wrong because it generates incorrect predictions.
+    This was the lesson of the discrepancy bewteen looking and search measures for both 
+    infants' abilities to represent objects as persisting and their abilities to track causal 
+    interactions.
+  .notes: :t()
+    As I've just been arguing, the failure of the Simple View presents us with a problem.
+    The problem is to understand the nature of infants' apprehension of the principles given
+    that it doesn't involve knowledge.
+    This is a problem that will permeate our discussion of the origins of mind because it 
+    problems of this form come up again and again in different domains. 
+    It isn't the only problem we'll encounter, but none of the problems are more important or more
+    general than this one.
+    
+    

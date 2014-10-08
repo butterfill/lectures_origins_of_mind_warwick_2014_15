@@ -11,7 +11,8 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
 
 
 
@@ -184,22 +185,59 @@ include ../../../fragments/slide_mixins
   .notes As you can see, there was a difference in looking times only in the experimental condition.
   img(src='/img/wang_2004_fig2a.png', style='max-width:496px')
   p.source Wang et al (2004, figure 2)
-  .notes This experiment is interesting because it doesn't use habituation, as Baillargeon's earlier drawbridge experiment did.
+  .notes: :t()
+    By the way, this experiment is interesting partly because it doesn't use habituation, as 
+    Baillargeon's earlier drawbridge experiment did.
+    It is also hard to explain the result by appeal only to the Principle of Object Perception
+    that we have so far listed.
 
 
-//- step back for a note on methods
 +slide_middle
-  p.center methods
-  p.center habituation vs violation-of-expectation
-  .notes [*Spend some time on habituation vs violation-of-expectations]
+  .notes: :t()
+    We're considering abilities to represent objects as persisting even when not perceived. 
+    Where are we?
+    We've seen that characteristing these abilities in terms of Principles of Object Perception
+    enables us to make testable predictions, many of which have been confirmed.
+    Importantly, we made the same claim about these Principles for abilities to segment objects.
+    The abilities to segment objects and to represent them as persisting are conceptually 
+    distinct.
+    However it may be that beliefs about a single set of principles underlies both abilities.
+    This is one of Spelke's brilliant insights.
+  .notes: :t()
+    Where does this leave us?
+    We still want to know about the status of the principles of object perception.
+    As I said before, it is one thing to say they are descriptively adequate and another thing
+    to understand how the Princples relate to cognitive mechanisms (processes and 
+    representations).
+    But now the question about the status of these Principles is more pressing because 
+    the claim that these principles of object perception explain infants' (and adults', 
+    and other primates') performance is now harder to reject.
+    It's harder to reject because we have converging evidence for the psychological reality of 
+    the principles from both segmentation and permanence.
+  .container_12
+    .grid_6
+      p principles of object perception
+    .grid_2
+      p.stretch-5  {
+    .grid_4
+      .kludge(style='margin-top:-30px;margin-left:-50px;')
+        p segmentation
+        p permanence
+        p ... (?)
+
 
 
 
 +slide
-  .notes How should we interpret these results?
-  .handout Interpreting violation-of-expectation experiments: 
-  .handout ‘evidence that infants look reliably longer at the unexpected than at the expected event is taken to indicate that they (1) possess the expectation under investigation; (2) detect the violation in the unexpected event; and (3) are surprised by this violation. The term surprise is used here simply as a short-hand descriptor, to denote a state of heightened attention or interest caused by an expectation violation.’
-  .handout.ctd \citep[p.\ 168]{wang:2004_young}
+  .notes: :t()
+     On the status of the Principles, consider this claim about the interpretation of the 
+     results of a violation-of-expectation experiment: 
+  .handout.notes: :t()
+    ‘evidence that infants look reliably longer at the unexpected than at the expected event is 
+    taken to indicate that they (1) possess the expectation under investigation; (2) detect the 
+    violation in the unexpected event; and (3) are surprised by this violation. The term 
+    surprise is used here simply as a short-hand descriptor, to denote a state of heightened 
+    attention or interest caused by an expectation violation.’ \citep[p.\ 168]{wang:2004_young}
   p ‘evidence that infants look reliably longer at the unexpected than at the expected event is taken to indicate that they
   p ‘(1) possess the 
     span.highlight2 expectation
@@ -213,18 +251,32 @@ include ../../../fragments/slide_mixins
     span   violation.’
   p.right (Wang et al 2004, p. 168)
   +invert('.highlight1')
+  .notes: :t()
+    What does ‘surprise’ mean here?
   +show('.step2')
+  .notes: :t()
+    So this is not surprise in a sense that requires awareness of a change in one's own beliefs.
+    It is rather that there is a particular way in which the detection of the violation is 
+    manifested.
   +words-bkg('.highlight2','yellow')
-  .notes Note that we are talking about expectations.
-  .notes This raises two questions: How do we arrive at these expectations? and What is an expectation?
-  .notes Spelke's claim is that we arrive at these expectations by inference from the Principles of Object Perception, including the principle of contintuity.
-  .notes So what is an expectation?  
-  .notes On the simple view we are adopting for now, an expectation is just a belief.
-  .notes The attraction of this simple view is it allows us to take literally the claim that we know the principles of object perception and arrive at expectations by a process of inference.
+  .notes: :t()
+    Note that we are talking about expectations.
+    This raises two questions: How do we arrive at these expectations? and What is an 
+    expectation?
+    Spelke's claim is that we arrive at these expectations by inference from the Principles of 
+    Object Perception, including the principle of contintuity.
+    So what is an expectation?  
+    On the simple view we are adopting for now, an expectation is just a belief.
+    The attraction of this simple view is it allows us to take literally the claim that we know 
+    the principles of object perception and arrive at expectations by a process of inference.
 
 +slide
-  .notes *todo*
-  p.handout.show ‘To make sense of such results [i.e. the results from violation-of-expectation tasks], we … must assume that infants, like older learners, 
+  .notes Here is an illustration of the Simple View ...
+  p.handout.notes.show
+    span ‘To make sense of such results [i.e. the results from violation-of-expectation tasks], 
+    span we … must assume that infants, 
+    span.like-older-learners like older learners
+    span , 
     span.highlight1 formulate … hypotheses
     span  about physical events and 
     span.highlight2 revise and elaborate these hypotheses in light of additional input
@@ -232,20 +284,23 @@ include ../../../fragments/slide_mixins
   .handout.ctd \citep[p.\ 329]{Aguiar:2002ob}
   p.right (Aguiar and Baillargeon 2002: 329).
   +words-bkg('.highlight1','pink')
+  .notes So infants formulate hypotheses
   +words-bkg('.highlight2','blue')
-
+  .notes: :t()
+    And infants revise and elaborate these hypotheses in light of additional input.
+    Now you might suggest that these researchers in talking about formulating and revising
+    hypotheses do not mean to suggest that infants are doing this in the sense that you or I 
+    might, and so do not mean to imply that they have beliefs or knowledge.  But ...
+  +highlight('.like-older-learners','orange')
+  .notes: :t()
+    ... they explicitly specify that infants do this ‘like older learners’.
 
 
 +slide_middle
-  .notes So the abilities to segment objects and to represent them as persisting are conceptually distinct.
-  .notes However it may be that knowledge of a single set of principles underlies both abilities.
-  .notes This is one of Spelke's brilliant insights.
-  .notes Where does this leave us?
-  .notes We still want to know about the status of the principles of object perception.
-  .notes But we now the question is more pressing.
-  .notes Because the claim that these principles of object perception explain infants' (and adults', and other primates') performance is now harder to reject.
-  .notes It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and permanence.
-  .notes Before we go any further, let me say a little more about the third thing on our list, causal interactions ...
+  .notes: :t()
+    So our current working hypothesis about the Principles is the Simple View.
+    But before we go any further, let me say a little more about the third thing on our list, 
+    causal interactions ...
   .container_12
     .grid_6
       p principles of object perception
@@ -262,7 +317,9 @@ include ../../../fragments/slide_mixins
   
 //- aisde: non-humans
 +slide
-  .notes As an aside I wanted to mention that object permanence is found in nonhuman animals including
+  .notes: :t()
+    As an aside I wanted to mention that object permanence is found in nonhuman animals 
+    including ...
   p.handout.show Object permanence is found in nonhuman animals including
   .handout.notes \begin{enumerate}
   ul
