@@ -1,12 +1,13 @@
 ---
 layout: 'default2'
-title: 'Lecture 04'
+title: 'Lecture 03'
 weburl: ''
 units: []
-lecture_date: '2013/10/24'
+lecture_date: '2014/10/16'
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
 
 - var images = get_images('bees')
 
@@ -15,31 +16,30 @@ mixin title_slide({document:document, images:images})
 
 
 +slide
-  .notes In this lecture I want to consider two interlocking themes simultaneously.
-  .notes These are (i) knowledge of physical objects; and (ii) knowledge/representation/modularity.
-  p two interlocking themes:
-    ul
-      li knowledge of physical objects
-      li knowledge/representation/modularity
-
-+slide
-  .notes I got some feedback.
-  p feedback
-  p ‘a more coherent structure to the lectures would be helpful — we seem to bounce around from one question to another and, especially because it is a 
-    span.highlight1 two hour lecture
-    span , it is very easy to get lost,
-  p ‘maybe a clearer conclusion or summary would help.’
-  +invert('.highlight1')
-  .notes I'm very curious to know whether the two hour lecture is better than two one hour lectures on different days.
-  .notes I'm also tempted to add an hour of lectures.
-  +uninvert('.highlight1')
-  .notes But that isn't the main issue raised in the feedback.
-  .notes In response to this feedback I propose to (i) provide a recap from last lecture; (ii) outline this lecture; (iii) try to signppost more clearly as I go (there is a coherent structure, I'm maybe just not explaining it clearly enough); and (iv) try to be clearer in the summary & conclusion at the end.
-  .slide
-    p.em-above ‘sometimes the jargon can be overwhelming’
-    .notes I aim at some point to provide a glossary.
-    .notes To that end it would be helpful if you would stop me whenever I use a term you don't understand.
-  
+  p.step2.hide interlocking themes:
+  ul
+    li.step2.hide knowledge of physical objects
+    li knowledge of causal interactions
+  .notes: :t()
+    The main theme of this lecture is knowledge of causal interactions.
+    My question is: How do infants first acquire knowledge of particular causal 
+    interactions among objects.
+    I want to approach this question in an odd way, by thinking about the perception of causation
+    in adults.
+    But before I come to that, I also want to mention that there is a second theme for this lecture.
+  +show('.step2')
+  .notes: :t()
+    In this lecture I want to consider several interlocking themes simultaneously.
+    The second theme is the problem I introduced in the last lecture, which arises from
+    the failure of the Simple View.
+    The problem is to understand the relation between infants' abilities regarding physical objects
+    and the Spelke principles which describe these given that the principles and their deliverances
+    are not actually knowledge.
+    It turns out that thinking about the perception of causation will help us with this theme too.
+  .notes: :t()
+    Now since the last lecture was a week ago, 
+    let me start by giving you a very recap.
+    What is the Simple View, why does it fail and why is its failure a problem?
   
   
 // recap : three questions
@@ -51,8 +51,6 @@ mixin insert_unit({unit:'230', title_slide:true, images:images})
 // intro to core knowledge / modularity
 mixin insert_unit({unit:'231', title_slide:true, images:images})
 
-+slide_middle
-  p.center strike? no
 
 // computation is the real essence of modularity
 mixin insert_unit({unit:'291', title_slide:true, images:images})

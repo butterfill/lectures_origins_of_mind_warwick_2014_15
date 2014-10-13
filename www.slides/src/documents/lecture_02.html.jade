@@ -11,10 +11,26 @@ include ../../fragments/unit_mixins
 include ../../fragments/origins_mixins
 
 
-- var images = get_images('bees')
+- var images = get_images('twins_2008')
 
 mixin title_slide({document:document, images:images})
 
+
+
+//- objects vs features segmentation, persistence and interaction
++insert_unit({unit:'161', title_slide:false, images:images})
+
+//- Segmentation and the Principles of Object Perception
++insert_unit({unit:'171', title_slide:true, images:images})
+
+//- From Segmentation to Permanence
++insert_unit({unit:'181', title_slide:true, images:images})
+
+//- this unit has been cut up and moved
+// +insert_unit({unit:'191', title_slide:true, images:images})
+
+
++section({title:'Essays', images:images})
 
 +slide_middle
   p.center peer review: what are you looking for?
@@ -43,19 +59,6 @@ mixin title_slide({document:document, images:images})
     the default approach?
   p.center feedback and assessment
 
-
-
-//- objects vs features segmentation, persistence and interaction
-+insert_unit({unit:'161', title_slide:true, images:images})
-
-//- Segmentation and the Principles of Object Perception
-+insert_unit({unit:'171', title_slide:true, images:images})
-
-//- From Segmentation to Permanence
-+insert_unit({unit:'181', title_slide:true, images:images})
-
-//- this unit has been cut up and moved
-// +insert_unit({unit:'191', title_slide:true, images:images})
 
 //- Causal Interaction
 +insert_unit({unit:'201', title_slide:true, images:images})
