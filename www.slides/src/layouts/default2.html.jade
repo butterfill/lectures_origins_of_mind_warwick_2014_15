@@ -1,5 +1,6 @@
-
-
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
 
 
 - var scripts = getBlock('scripts')
@@ -37,6 +38,8 @@
 - scripts.add(["/vendor/deck.js/deck.step.js"])
 - scripts.add(["/vendor/deck.js/deck.events.js"])
 - scripts.add(["/vendor/deck.js/deck.anim.js"])
+
+//- deck js extension to help with deckjs-remote (this extension just triggers the main extension)
 - scripts.add(["/vendor/deck.js/deck.remote.js"])
 
 //- effects 
@@ -78,13 +81,6 @@ html
     //- Mobile viewport optimized: h5bp.com/viewport
     meta(name="viewport", content="width=device-width")
 
-    //- Icons
-    //- disabled
-        //- link(rel="shortcut icon", href="ico/favicon.ico")
-        //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
 
     // - lato font
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
@@ -118,7 +114,7 @@ html
         .words: .container_12: .grid_12
           p also ...
           p Press the left key to go backwards (or swipe right)
-          p Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)
+          p Press n to toggle whether notes are shown (or add '?notes' to the url before the #)
           p Press m or double tap to see a menu of slides
   
       != content

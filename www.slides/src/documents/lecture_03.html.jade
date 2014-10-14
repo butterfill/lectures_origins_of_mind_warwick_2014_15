@@ -15,14 +15,18 @@ mixin title_slide({document:document, images:images})
 
 
 
+//- *TODO* update conclusions!
+
+
+//- be careful updating: this slide is partially duplicated in unit_221 and unit_281!!
 +slide
   p.step2.hide interlocking themes:
   ul
-    li.step2.hide knowledge of physical objects
+    li.step2.hide the Problem
     li knowledge of causal interactions
   .notes: :t()
     The main theme of this lecture is knowledge of causal interactions.
-    My question is: How do infants first acquire knowledge of particular causal 
+    My question is: How do humans first acquire knowledge of particular causal 
     interactions among objects.
     I want to approach this question in an odd way, by thinking about the perception of causation
     in adults.
@@ -30,9 +34,9 @@ mixin title_slide({document:document, images:images})
   +show('.step2')
   .notes: :t()
     In this lecture I want to consider several interlocking themes simultaneously.
-    The second theme is the problem I introduced in the last lecture, which arises from
+    The second theme is the Problem I introduced in the last lecture, which arises from
     the failure of the Simple View.
-    The problem is to understand the relation between infants' abilities regarding physical objects
+    The Problem is to understand the relation between infants' abilities regarding physical objects
     and the Spelke principles which describe these given that the principles and their deliverances
     are not actually knowledge.
     It turns out that thinking about the perception of causation will help us with this theme too.
@@ -43,35 +47,43 @@ mixin title_slide({document:document, images:images})
   
   
 // recap : three questions
-mixin insert_unit({unit:'221', title_slide:true, images:images})
++insert_unit({unit:'221', title_slide:true, images:images})
 
-// non-solutions; parable of the wrock (rock without mass); strength
-mixin insert_unit({unit:'230', title_slide:true, images:images})
+//- non-solutions; parable of the wrock (rock without mass); strength
+//- cut
+  mixin insert_unit({unit:'230', title_slide:true, images:images})
 
 // intro to core knowledge / modularity
-mixin insert_unit({unit:'231', title_slide:true, images:images})
+//- cut/moved
+  mixin insert_unit({unit:'231', title_slide:true, images:images})
 
 
 // computation is the real essence of modularity
-mixin insert_unit({unit:'291', title_slide:true, images:images})
+//- cut/moved
+  mixin insert_unit({unit:'291', title_slide:true, images:images})
 
 // core knowledge / modular representation : paradigm cases
 // ***abandoned
 // mixin insert_unit({unit:'241', title_slide:true, images:images})
   
 // perception of causation
-mixin insert_unit({unit:'251', title_slide:true, images:images})
-  
++insert_unit({unit:'251', title_slide:true, images:images})
+    
 // object indexes (object files) and causal perception
-mixin insert_unit({unit:'261', title_slide:true, images:images})
++insert_unit({unit:'261', title_slide:true, images:images})
+
+// Object Indexes and the Principles of Object Perception
++insert_unit({unit:'266', title_slide:true, images:images})
   
 // perceptual expectations
-mixin insert_unit({unit:'271', title_slide:true, images:images})
++insert_unit({unit:'271', title_slide:true, images:images})
 
 
 // conclusions
-mixin insert_unit({unit:'281', title_slide:true, images:images})
++insert_unit({unit:'281', title_slide:true, images:images})
 
+// core knowledge
++insert_unit({unit:'601_milan', title_slide:true, images:images})
 
 
 //- core knowledge and categorical perception --- how related?
