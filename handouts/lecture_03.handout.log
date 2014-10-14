@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  18 SEP 2014 20:20
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  14 OCT 2014 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1079,29 +1079,31 @@ LaTeX Info: Redefining \nameref on input line 30.
 \openout3 = `lecture_03.handout.out'.
 
 LaTeX Info: Redefining \Ref on input line 30.
-File: img/kellman_1983_fig2.neg.png Graphic file (type QTm)
-
-<use  "img/kellman_1983_fig2.neg.png" > (./lecture_03.handout.bbl)
-Overfull \vbox (40.96432pt too high) has occurred while \output is active []
-
-
-[1
+ [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
- (./lecture_03.handout.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 125.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+File: img/kellman_1983_fig2.neg.png Graphic file (type QTm)
+
+<use  "img/kellman_1983_fig2.neg.png" >
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 208.
+ (./lecture_03.handout.bbl [2])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+
+(./lecture_03.handout.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 23724 strings out of 493938
- 453665 string characters out of 6148856
- 498006 words of memory out of 5000000
- 26765 multiletter control sequences out of 15000+600000
- 4897 words of font info for 43 fonts, out of 8000000 for 9000
+ 23778 strings out of 493938
+ 454678 string characters out of 6148856
+ 487227 words of memory out of 5000000
+ 26808 multiletter control sequences out of 15000+600000
+ 8139 words of font info for 56 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 48i,5n,80p,667b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,5n,80p,667b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lecture_03.handout.pdf (1 page).
+Output written on lecture_03.handout.pdf (3 pages).
