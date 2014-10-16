@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: lecture_03.notes.aux
 The style file: apalike.bst
 Database file #1: $HOME/endnote/phd_biblio.bib
-You've used 15 entries,
+You've used 21 entries,
             1935 wiz_defined-function locations,
-            581 strings with 6160 characters,
-and the built_in function-call counts, 6128 in all, are:
-= -- 616
-> -- 193
-< -- 17
-+ -- 65
-- -- 59
-* -- 497
-:= -- 1033
-add.period$ -- 48
-call.type$ -- 15
-change.case$ -- 102
-chr.to.int$ -- 15
-cite$ -- 15
-duplicate$ -- 246
-empty$ -- 470
-format.name$ -- 94
-if$ -- 1253
+            621 strings with 7101 characters,
+and the built_in function-call counts, 8616 in all, are:
+= -- 867
+> -- 285
+< -- 20
++ -- 95
+- -- 89
+* -- 729
+:= -- 1459
+add.period$ -- 66
+call.type$ -- 21
+change.case$ -- 147
+chr.to.int$ -- 21
+cite$ -- 21
+duplicate$ -- 330
+empty$ -- 651
+format.name$ -- 134
+if$ -- 1735
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 78
-num.names$ -- 49
-pop$ -- 75
+missing$ -- 22
+newline$ -- 108
+num.names$ -- 67
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 148
 quote$ -- 0
-skip$ -- 196
+skip$ -- 259
 stack$ -- 0
-substring$ -- 485
-swap$ -- 40
+substring$ -- 706
+swap$ -- 46
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 124
 warning$ -- 0
-while$ -- 52
+while$ -- 75
 width$ -- 0
-write$ -- 203
+write$ -- 281

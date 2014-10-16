@@ -48,50 +48,11 @@ include ../../../fragments/unit_mixins
   +clip('img','auto')
   .notes ... and bursting.
 
-+slide
-  .notes: :t()
-    But we shouldn't trust verbal reports.
-    After all, people will say all kinds of things about their experiences.
-    This is nicely illustrated by a famous experiment on apparent behaviour by \citet{Heider:1944ts}.
-  +img_clip('heider_1946_fig1.png')
-  p.source Heider & Simmel 1946, figure 1
 
-+slide
-  p How to get beyond intuition?
-  .slide
-    .notes.show
-      p.em-above Michotte: the experience of launching depends on interactions among various factors including 
-      ul
-        li the relative speeds of the two objects
-        li the delay between the first and second objects’ movements
-        li the spatial gap between the two objects 
-        li the trajectories of the two objects. 
-    .notes: :t()
-      But how does this help us?  Importantly, tiny variations in the parameters will make 
-      big differences in the experiences reported.
-      Let me illustrate this for the delay between the objects' movements.
-
-+slide
-  .notes adults: (b) they can discriminate between short gaps and long gaps.
-  .notes That is, the can discriminate gaps of around 50ms.
-  img(src='/img/michotte_1946_table_ix_part.png')
-  p.source Michotte 1946 [1963], p. 115 table IX (part)
-
-+slide
-  .notes Maybe this is clearer as a figure.
-  img(src='/img/michotte_1946_table_ix_as_figure.png')
-  p.source Michotte 1946 [1963], p. 115 table IX (part)
-  .notes: :t()
-    People can distinguish between stimuli that differ only in that the gap between two movements
-    is approximately 50ms longer in one than the other.
-    A 50ms difference makes the difference between reporting launching and reporting two movements.
-  .notes: :t()
-    We need to do more to understand the effect, ...
-    
 +slide_middle
   p.center detecting launching effects at 6 months
   .notes: :t()
-    ... but first note that this effect, or one very like
+    This effect, or one very like
     it, can also be found in infancy. 
   .notes: :t()
     Of course, six-month-olds can't tell us about their expeirences.
@@ -141,6 +102,60 @@ include ../../../fragments/unit_mixins
   +img_clip('leslie_keeble_1987_table4.png','auto')
   p.source Leslie & Keeble 1987, table 4
 
+
+
+
+section.slide
+  .heider-simmel.hide
+    +_slide_inner
+      +img_clip('heider_1946_fig1.png')
+      p.source Heider & Simmel 1946, figure 1
+  +reset
+    +middle
+      p.center Can humans perceive causal interactions?
+  .notes: :t()
+    So can humans, adult and infant, perceive causal interactions?
+  +show('.heider-simmel')
+  .notes: :t()
+    So far I don't think we have strong reasons to accept that they do.
+    In infants we have discrimination and in adults we have verbal reports.
+    But we shouldn't trust verbal reports.
+    After all, people will say all kinds of things about their experiences.
+    This is nicely illustrated by a famous experiment on apparent behaviour by \citet{Heider:1944ts}.
+      
+
++slide
+  p How to get beyond intuition?
+  .slide
+    .notes.show
+      p.em-above Michotte: the experience of launching depends on interactions among various factors including 
+      ul
+        li the relative speeds of the two objects
+        li the delay between the first and second objects’ movements
+        li the spatial gap between the two objects 
+        li the trajectories of the two objects. 
+    .notes: :t()
+      But how does this help us?  Importantly, tiny variations in the parameters will make 
+      big differences in the experiences reported.
+      Let me illustrate this for the delay between the objects' movements.
+
++slide
+  .notes adults: (b) they can discriminate between short gaps and long gaps.
+  .notes That is, the can discriminate gaps of around 50ms.
+  img(src='/img/michotte_1946_table_ix_part.png')
+  p.source Michotte 1946 [1963], p. 115 table IX (part)
+
++slide
+  .notes Maybe this is clearer as a figure.
+  img(src='/img/michotte_1946_table_ix_as_figure.png')
+  p.source Michotte 1946 [1963], p. 115 table IX (part)
+  .notes: :t()
+    People can distinguish between stimuli that differ only in that the gap between two movements
+    is approximately 50ms longer in one than the other.
+    A 50ms difference makes the difference between reporting launching and reporting two movements.
+  .notes: :t()
+    We need to do more to understand the effect, ...
+    
     
 +slide
   .notes: :t()

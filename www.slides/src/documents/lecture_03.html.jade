@@ -18,6 +18,27 @@ mixin title_slide({document:document, images:images})
 //- *TODO* update conclusions!
 
 
++slide
+  p I was wrong
+  .slide
+    img.bkg(src='/img/mccurry_2009_fig1.png', style='margin-top:250px')
+    p.source McCurry et al 2009, figure 1
+  .notes: :t()
+    Why do 5 month old infants reach towards the cloth screen more often when a cube 
+    goes in and a circle comes out than when a cube goes in and a cube comes out?
+    I said this was an example of an experiment in which the action begins before occlusion
+    is complete.
+    When I went back to the paper I realised I was wrong (I was confusing it with
+    another experiment).
+  .notes: :t()
+    Here's the authors' description of their procedure.
+    'Once the ball came to rest at the right edge of the platform, the platform was pushed forward until the edge of the platform was directly in front of, and within easy reach of, the infant. In the second phase, the infant was allowed to search for 20 s. ' \citep{mccurry:2009_beyond}
+  
++slide
+  img(src='/img/mccurry_2009_fig2.png')
+  p.source McCurry et al 2009, figure 2
+
+
 //- be careful updating: this slide is partially duplicated in unit_221 and unit_281!!
 +slide
   p.step2.hide interlocking themes:
@@ -82,6 +103,8 @@ mixin title_slide({document:document, images:images})
 // conclusions
 +insert_unit({unit:'281', title_slide:true, images:images})
 
+
+//- DID NOT DO IN 2013-4 - out of time!  Move to lecture 05
 // core knowledge
 +insert_unit({unit:'601_milan', title_slide:true, images:images})
 

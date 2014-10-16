@@ -13,12 +13,65 @@ include ../../fragments/origins_mixins
 
 - var images = get_images('twins_2008')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
 
+
++slide_middle
+  p.center recap
+  .notes: :t()
+    The question for this course is ...
+    We are going to approach this question by examining the evidence from developmental science, 
+    exploring how it bears on philosophical positions like nativism and empiricsm, 
+    and identifying philosophical problems created by the evidence.
+    Our focus is on two breakthrough sets of findings.
+    One concerns core knowledge, the other social interaction.
+    One problem for us is that these two sets of findings are typically considered in isolation, 
+    although I think there are strong reasons to suppose that understanding the origins of knowledge 
+    will require thinking about both core knowledge and social interaction.
+
++slide_middle
+  p.center challenge
+  .notes: :t()
+    My working hypothesis is that we can't understand early forms of social interaction without core knowledge;  
+    and that we can't understand how core knowledge leads to knowledge proper without social interaction.
+    The challenge is to understand how core knowledge and social interaction conspire in the emergence of knowledge.
+    Well, that's the big picture.
+    But at this stage in the course I simply want to introduce you to some of the key findings and the puzzles they raise.
+
+//- 
+  section.slide 
+    .notes If you've seen the outline of lectures, you'll know that my idea is to organise the lectures by domains of knowledge.
+    .words: .container_12
+      .grid_3
+        p plan
+      .slide
+        .notes The topics are these.
+        .notes I'm not always intending to do one lecture per topic.  
+        .notes Rather, in most of these lectures I'm planning to talk about two or more topics.
+        .notes This risks making things seem fractured.
+        .notes But I hope it will make the material easier to absorb and the lectures more interesting.
+        .grid_9
+          .topics
+            p social interaction
+            p objects and how they interact
+            p numbers
+            p.today seeing and talking about colours
+            p words and other communicative tools
+            p actions: teleology and motor awareness
+            p minds
+          +blur_('.topics :not(.today)')
+          +highlight-row('.today', 'white')
+          .notes Today's topic is colour.
+          .notes In some ways this is an odd topic to do first, or at all.
+          .notes I've chosen to do colour for three reasons.
+            ul
+              li It's fun
+              li It's a relatively simple case, and one that provides a model for other cases.
+              li It challenges almost any prior assumption you might make about the emergence of knowledge.
 
 
 //- objects vs features segmentation, persistence and interaction
-+insert_unit({unit:'161', title_slide:false, images:images})
++insert_unit({unit:'161', title_slide:true, images:images})
 
 //- Segmentation and the Principles of Object Perception
 +insert_unit({unit:'171', title_slide:true, images:images})

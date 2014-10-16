@@ -1,0 +1,35 @@
+---
+layout: 'default2'
+title: 'Lecture 04'
+weburl: ''
+units: []
+lecture_date: '2014/10/23'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+
+//- knowledge of colour: the question
+mixin insert_unit({unit:'110', title_slide:true, images:images, handout:false})
+
+//- first something on categorical perception of colour
+//- what is categorical perception of colour?
+mixin insert_unit({unit:'111', title_slide:true, images:images})
+
+//- categorical perception of colour in infancy  
+mixin insert_unit({unit:'121', title_slide:true, images:images})
+  
+//- categorical perception and knowledge
+mixin insert_unit({unit:'131', title_slide:true, images:images})
+  
+//- categorical perception in infants and adults --- how related?
+mixin insert_unit({unit:'141', title_slide:true, images:images})
+
+//- might have gone on to do relation between categorical perception and core knowledge, unit 151 (not yet finished)
+

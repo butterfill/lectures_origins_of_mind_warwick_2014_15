@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Adolphs, 2010]{adolphs_conceptual_2010}
+Adolphs, R. (2010).
+\newblock Conceptual challenges and directions for social neuroscience.
+\newblock {\em Neuron}, 65(6):752--767.
+
 \bibitem[Carey and Xu, 2001]{Carey:2001ue}
 Carey, S. and Xu, F. (2001).
 \newblock Infants' knowledge of objects: Beyond object files and object
@@ -28,6 +33,11 @@ Kellman, P.~J. and Spelke, E.~S. (1983).
 \newblock Perception of partly occluded objects in infancy.
 \newblock {\em Cognitive Psychology}, 15(4):483--524.
 
+\bibitem[Keren and Schul, 2009]{keren_two_2009}
+Keren, G. and Schul, Y. (2009).
+\newblock Two is not always better than one.
+\newblock {\em Perspectives on Psychological Science}, 4(6):533 --550.
+
 \bibitem[Kozhevnikov and Hegarty, 2001]{kozhevnikov:2001_impetus}
 Kozhevnikov, M. and Hegarty, M. (2001).
 \newblock Impetus beliefs as default heuristics: Dissociation between explicit
@@ -51,10 +61,27 @@ Leslie, A., Xu, F., Tremoulet, P.~D., and Scholl, B.~J. (1998).
   systems.
 \newblock {\em Trends in Cognitive Sciences}, 2(1).
 
+\bibitem[Mash et~al., 2006]{mash:2006_what}
+Mash, C., Novak, E., Berthier, N.~E., and Keen, R. (2006).
+\newblock What do two-year-olds understand about hidden-object events?
+\newblock {\em Developmental Psychology}, 42(2):263--271.
+
+\bibitem[{McCurry} et~al., 2009]{mccurry:2009_beyond}
+{McCurry}, S., Wilcox, T., and Woods, R. (2009).
+\newblock Beyond the search barrier: A new task for assessing object
+  individuation in young infants.
+\newblock {\em Infant Behavior and Development}, 32(4):429--436.
+
 \bibitem[Michotte, 1963]{Michotte:1946nz}
 Michotte, A. (1946 [1963]).
 \newblock {\em The Perception of Causality}.
 \newblock Meuthen, London.
+
+\bibitem[Perry et~al., 2008]{perry:2008_representational}
+Perry, L.~K., Smith, L.~B., and Hockema, S.~A. (2008).
+\newblock Representational momentum and children's sensori-motor
+  representations of objects.
+\newblock {\em Developmental Science}, 11(3):F17--F23.
 
 \bibitem[Pylyshyn, 2001]{Pylyshyn:2001hl}
 Pylyshyn, Z. (2001).
@@ -79,6 +106,11 @@ Scholl, B.~J. and Nakayama, K. (2004).
 \newblock Illusory causal crescents: Misperceived spatial relations due to
   perceived causality.
 \newblock {\em Perception}, 33:455--469.
+
+\bibitem[Scholl and Tremoulet, 2000]{Scholl:2000eq}
+Scholl, B.~J. and Tremoulet, P.~D. (2000).
+\newblock Perceptual causality and animacy.
+\newblock {\em Trends in Cognitive Sciences}, 4(8):299--309.
 
 \bibitem[Spelke, 1988]{Spelke:1988xc}
 Spelke, E. (1988).
