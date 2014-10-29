@@ -55,6 +55,3 @@
   white-space: pre-wrap;
 }
 
-@media print {
-  .deck-toc {
-    display: none; } }

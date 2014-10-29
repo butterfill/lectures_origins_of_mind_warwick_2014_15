@@ -675,6 +675,10 @@ only toggle the notes panel for this cloned window.
       $[deck]('toggleNotes');
     }
     
+    // work out window size (to position notes)
+    var notes_below = ( $(window).height()/$(window).width() > (1024/768) );
+    
+    
     // Bind key events 
     $d.unbind('keydown.decknotes').bind('keydown.decknotes', function(e) {
       if (e.which === opts.keys.notes || $.inArray(e.which, opts.keys.notes) > -1) {
