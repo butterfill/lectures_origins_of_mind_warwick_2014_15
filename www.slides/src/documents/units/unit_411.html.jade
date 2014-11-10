@@ -11,7 +11,8 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
 
 
 +slide_middle
@@ -60,11 +61,24 @@ section.slide
   .handout \item Requires attention and working memory in fully competent adults \citep{Apperly:2008jv,McKinnon:2007rr}
   .handout \end{itemize}
 
-- var img_nos = range(24,73)
+- var img_nos = range(24,49)
 each img_no in img_nos
   - var filename = 'unit_411/slide_budapest_lecture01_'+img_no+'.jpg'
   +slide({bkg:filename})
 
++slide({bkg:'unit_411/slide_budapest_lecture01_50.jpg'})
+  .notes: :t()
+    ‘In experiment 3, we tested whether infants would correctly attribute ignorance to an 
+    adult who did not know in which of the two containers her toy was and whether, in 
+    contrast to the false belief conditions, infants would inform the adult about the 
+    aversive objects in both locations equally.’
+
+- var img_nos = range(51,72)
+each img_no in img_nos
+  - var filename = 'unit_411/slide_budapest_lecture01_'+img_no+'.jpg'
+  +slide({bkg:filename})
+
++slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})
 
 // *todo* duplicated!
 mixin slide_theChallenge()
@@ -78,13 +92,20 @@ mixin slide_theChallenge()
       block
 
 +slide_theChallenge
-  .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
-  .notes Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.
-  .notes So a Myth of Jones style story seemed viable.
-  .notes But the findings of competence in infants of around one year of age changes this.
-  .notes These findings tell us that not all abilities to represent others' mental states can depend on things like language.
-  .notes And, as I've been stressing, these findings also create a puzzle.
-  .notes The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.
+  .notes: :t()
+    The challenge is to explain the emergence, in evolution or development, of mindreading.
+    Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.
+    So a Myth of Jones style story seemed viable.
+    But the findings of competence in infants of around one year of age changes this.
+    These findings tell us that not all abilities to represent others' mental states can depend on things like language.
+    And, as I've been stressing, these findings also create a puzzle.
+    The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.
+  .notes: :t()
+    *todo*: There are at least two possible puzzles you might focus on:
+    1. How can we avoid the apparent contradiction in the evidence?
+    2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?
+    Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.
+    This wasn't clear enough in the lecture (sorry!).
   
 
 +slide({bkg:'slide_lecture04_013.jpg'})
@@ -92,12 +113,62 @@ mixin slide_theChallenge()
   .notes But it's also different.
   .notes In the case of physical objects, the conflict was between measures involving looking and measures involving searching.
   .notes In this case it's different, because on the infant side there is not just looking but also acting (e.g. helping) and even communicating.
-  .notes &nbsp;
-  .notes *todo*: There are at least two possible puzzles you might focus on:
-  .notes 1. How can we avoid the apparent contradiction in the evidence?
-  .notes 2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?
-  .notes Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.
-  .notes This wasn't clear enough in the lecture (sorry!).
+
+
+// *todo : reveal first column from start ; add block for notes
+mixin discrepancy_table(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td evidence for knowledge in infancy
+        td evidence against knowledge
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td categories used in learning labels & functions
+        td failure to use colour as a dimension in ‘same as’ judgements
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td physical objects
+        td patterns of dishabituation and anticipatory looking
+        td unreflected in planned action (may influence online control)
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td reflected in anticipatory looking, communication, &c
+        td not reflected in judgements about action, desire, ...
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td syntax
+        td [to follow]
+        td [to follow]
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td number
+        td [to follow]
+        td [to follow]
+
+
++slide
+  +discrepancy_table
+
++slide_middle
+  p 1. There are subjects who can pass A-tasks but cannot pass B-tasks.
+  p.em-above 2. These subjects’ success on A-tasks is explained by the fact that they 
+    span.bold can
+    span  
+    span.represent represent
+    span  (false) beliefs.
+  p.em-above  3. These subjects’  failure on B-tasks is explained by the fact that they 
+    span.bold cannot
+    span  
+    span.represent represent
+    span  (false) beliefs.
+  +highlight('.represent')
+  .notes: :t()
+    So we're invited to think that there may be representation in one sense but not another.
+    Only the second sense is knowledge.
+    
+  
 
 
 +slide_middle

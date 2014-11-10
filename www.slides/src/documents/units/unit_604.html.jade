@@ -1,0 +1,234 @@
+---
+layout: 'deck_unit'
+title: "Core Knowledge: Objections"
+tags: []
+description: "What is core knowledge?  Why do we need a notion of core knowledge?  What is its relation to knowledge?"
+depends: ['']
+source: ['']
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  p.center.step2.hide What can we do about
+  p.center multiple definitions
+    span.step2.hide ?
+  .notes: :t()
+    Be aware that not everyone thinks of core knowledge in the same way,
+    and that the term is rarely defined explicitly anyway.
+    I've put a recent quote from Spelke and Lee on your handout to illustrate 
+    a different idea.
+  .handout: :t()
+    ‘We hypothesize that uniquely human cognitive achievements build on systems that humans 
+    share with other animals: core systems that evolved before the emergence of our species. 
+    The internal functioning of these systems depends on principles and processes that are 
+    distinctly non-intuitive.  Nevertheless, human intuitions about space, number, morality 
+    and other abstract concepts emerge from the use of symbols, especially language, to 
+    combine productively the representations that core systems deliver’
+    \citep[pp.\ 2784-5]{spelke:2012_core}.
+  +show('.step2')
+    .notes What can we do about multiple definitions?
+
+
+
++slide_middle
+  .notes: :t()
+    In answering the question, What is core knowledge? I think we should be inspired by 
+    the notion of radical interpretation.
+  p.notes.show ‘All understanding of the speech of another involves radical interpretation’
+  p.right Davidson 1973, p. 125
+  .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
+  .notes: :t()
+    (It's not just core knowledge; I think we have too approach science as radical interpreters ...)
+  .notes: :t()
+    How does radical interpretation work?
+    Interpretation is hard because there are two factors: truth and meaning.
+    The proposal Davidson makes is that we assume truth and infer meaning.
+    I'm recommending a similar strategy for core knowledge.
+    Very roughly, we take for granted that the evidence establishes various hypotheses.  We then 
+    ask what core knowledge could be given these are true.
+    But more carefully, we first have to ask what motivates talk about core knowledge at all.
+
+  
++slide_middle
+  .notes So we have to ask ...
+  p.center.notes.ctd.show Why postulate core knowledge?
+
++slide_middle
+  .notes: :t()
+    The first problem we encountered was that the Simple View is false.
+    But maybe we can appeal to the Core Knowledge View.
+  .notes: :t()
+    According to the Core Knowledge View, the principles of object perception, and maybe also the 
+    expectations they give rise to, are not knowledge.
+    But they are core knowledge.
+  .notes: :t()
+    This raises some issues.  Is the Core Knowledge View consistent with the claims that 
+    we have ended up with, e.g. about categorical perception and the Principles of Object 
+    Perception characterising the way that object indexes work?
+    I think the answer is, basically, yes.  Categorical perception involves a system that has
+    many of the features associated with core knowledge.
+  .notes: :t()
+    But before going further, I think we critically examine the notion and see whether we really
+    understand what core knowledge is.
+  p.center.line-through The Simple View
+  p.center The Core Knowledge View
+
+
+
+// *todo : reveal first column from start ; add block for notes
+mixin discrepancy_table(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td evidence for knowledge in infancy
+        td evidence against knowledge
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td categories used in learning labels & functions
+        td failure to use colour as a dimension in ‘same as’ judgements
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td physical objects
+        td patterns of dishabituation and anticipatory looking
+        td unreflected in planned action (may influence online control)
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td reflected in anticipatory looking, communication, &c
+        td not reflected in judgements about action, desire, ...
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td syntax
+        td [to follow]
+        td [to follow]
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td number
+        td [to follow]
+        td [to follow]
+
+
++slide
+  .notes: :t()
+    So why do we need a notion like core knowledge?
+    Think about these domains.
+    In each case, we're pushed towards postulating that infants know things, but 
+    also pushed against this.
+    Resolving the apparent contradiction is what core knowledge is for.
+  +discrepancy_table
+  // **todo: these notes belong after the table is achieved
+  .notes: :t()
+    Key question: What features do we have to assign to core knowledge if it's to 
+    describe these discrepancies?
+  .notes: :t()
+    [don't say: I think the fundamental feature is inaccessibility to knowledge
+    (‘limited accessibility’), but this isn't actually one of the features listed!.]
+  .notes: :t()
+    [don't say: To say that a system or module exhibits limited accessibility is to say that the 
+    representations in the system are not usually inferentially integrated with knowledge.
+    I think this is the key feature we need to assign to core knowledge in order to explain 
+    the apparent discrepancies in the findings about when knowledge emerges in development.]
+
+
+
+
++slide_middle
+  .notes: :t()
+    If this is what core knowledge is for (if it exists to explain these discrepancies), what 
+    features must core knowledge have?
+  p.center If this is what core knowledge is for, what features must core knowledge have?
+
+//- repeats an earlier slide  
++slide
+  p
+    span ‘Just as humans are endowed with multiple, 
+    span.noblur1 specialized perceptual systems
+    span , so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’
+  .handout.ctd \citep[p.\ 517]{Carey:1996hl}
+  p.right (Carey and Spelke 1996: 517)
+  p ‘core systems are 
+    ol
+      li largely innate 
+      li encapsulated 
+      li unchanging 
+      li arising from phylogenetically old systems 
+      li built upon the output of innate perceptual analyzers’ 
+    p.right (Carey and Spelke 1996: 520)
+    p.em-above representational format: iconic (Carey 2009)
+  .notes: :t()
+    Look at those features characterising core knowledge as defined by Carey and Spelke again
+    -- innate, encapsulated, unchanging and the rest.
+    None of these straightforwardly enable us to predict that core knowledge of objects will 
+    guide looking but not reaching.
+    [I'll say in a moment: 
+    The iconic format may be important, 
+    but if it is it's because it explains a missing feature, namely limited
+    accessibility.
+    [But I'm not sure this is right: how to get from iconic to limited accessiblity?]]
+
+    
+            
++slide_middle
+  .notes So, to return to my question,
+  p.center.notes.show If this is what core knowledge is for, what features must core knowledge have?
+  p.em-above.center
+    span.bkg-words-highlight-invert not being knowledge
+  .notes: :t()
+    The answer seems to be: none of the features that are stipluated in introducing it.
+    This gives us a \textbf{first objection}: there seems to be a mismatch between
+    the definition and application.
+  .notes: :t()
+    [The feature we most need is actually missing from their list: limited accessibility.
+    But this thought comes later.]
+
+
+
+
+
+
++slide_middle
+  p.center another objection
+        
++slide
+  .notes: :t() 
+    One reason for doubting that the notion of a core system is explanator arises from the 
+    way we have introduced it.
+    We have introduced it by providing a list of features.
+    But why suppose that this particular list of features constitutes a natural kind?
+    This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
+    (These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)
+  .step1
+    .handout \subsection{Objection}
+    p.handout.notes.show ‘there is a 
+      span.highlight1 paucity of … data
+      span  to suggest that they are the only or the best way of carving up the processing,
+    p.handout.notes.show ‘and it 
+      span.highlight1 seems doubtful
+      span  that the often long lists of correlated attributes should come as a package’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+  .slide.step2
+    p.handout.notes.show.em-above ‘
+      span.highlight1 we wonder
+      span  whether the dichotomous characteristics used to define the two-system models 
+      | are … perfectly correlated …
+    p.handout.ctd.notes [and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+    .handout.notes.ctd \citep[p.\ 537]{keren_two_2009}
+    p.right Keren and Schul (2009, p. 537)
+  +highlight('.highlight1','pink')
+  .notes This is weak.
+  .notes Remember that criticism is easy, especially if you don't have to prove someone is wrong.
+  .notes Construction is hard, and worth more.
+  +blur('.step1, .step2')
+  .slide
+    .notes Even so, there is a problem here.
+    p.handout.notes.show.em-above
+      | ‘the process architecture of social cognition is still very much in need of a detailed theory’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+                        
+  
+

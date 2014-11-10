@@ -3,10 +3,10 @@ layout: 'default2'
 title: 'Lecture 07'
 weburl: ''
 units: []
-lecture_date: '2013/11/21'
+lecture_date: '2014/11/20'
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/lecture_mixins
 
 - var images = get_images('bees')
 
@@ -14,20 +14,36 @@ mixin title_slide({document:document, images:images})
 
 
 
-//- 
-+insert_unit({unit:'601', title_slide:false, images:images})
+//- What is an utterance
++insert_unit({unit:'501', title_slide:false, images:images})
 
+//- Davidson - If someone can think, she can communicate with language
++insert_unit({unit:'511', title_slide:true, images:images})
 
-//- syntax
-+insert_unit({unit:'641', title_slide:true, images:images})
+//- First view: training / lab rat
++insert_unit({unit:'521', title_slide:true, images:images})
 
+//- understanding
++insert_unit({unit:'531', title_slide:true, images:images})
 
-//- advertise cumberland lodge
-+slide({bkg:'slide_cumberland_lodge_2014.jpg'})
+//- linguistic Creativity
++insert_unit({unit:'541', title_slide:true, images:images})
 
-+slide
-  .notes Now I want to go back the main line of my plan, which calls for us to consider communication generally.
-  img(src='/img/fig_action_communicative_linguistic.png')
+//- Bloom &c
++insert_unit({unit:'551', title_slide:true, images:images})
 
-//- pointing
-+insert_unit({unit:'661', title_slide:true, images:images})
+//- Summary
++insert_unit({unit:'561', title_slide:true, images:images})
+
+//- Grice
++insert_unit({unit:'571', title_slide:true, images:images})
+
+//- Second view: shipwreck survivor (Bloom)
+
+//- Against the second view
+
+//- Third view: social interaction
+
+//- Against the third view
+
+//- Conclusion

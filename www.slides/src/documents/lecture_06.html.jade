@@ -3,47 +3,57 @@ layout: 'default2'
 title: 'Lecture 06'
 weburl: ''
 units: []
-lecture_date: '2013/11/14'
+lecture_date: '2014/11/13'
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
 
 - var images = get_images('bees')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
 
 
 
-//- What is an utterance
-+insert_unit({unit:'501', title_slide:false, images:images})
+//- 
+  Need some kind of recap to the problems and solutions I suggested
+  - the Simple View 
+  - is wrong
+  - this is a problem (what else is it if not knowledge )
+  - [sets the scene for core knowledge]
+  
 
-//- Davidson - If someone can think, she can communicate with language
-+insert_unit({unit:'511', title_slide:true, images:images})
+//- core knowledge: first pass
++insert_unit({unit:'601_warwick', title_slide:false, images:images})
 
-//- First view: training / lab rat
-+insert_unit({unit:'521', title_slide:true, images:images})
+//- objections to core knowledge:
++insert_unit({unit:'604', title_slide:true, images:images})
 
-//- understanding
-+insert_unit({unit:'531', title_slide:true, images:images})
 
-//- linguistic Creativity
-+insert_unit({unit:'541', title_slide:true, images:images})
+//- surely the philosophers can help us out here? ....
+//- Core Knowledge and Modularity
++insert_unit({unit:'231', title_slide:false, images:images})
 
-//- Bloom &c
-+insert_unit({unit:'551', title_slide:true, images:images})
+//- 
+  object indexes, perceptual expectations
+  categorical perception
+  mindreading: automatic processes and minimal models
+  ... considering all these together, maybe it is a mistake
+  to think that we even need a domain-general notion of core knowledge!
 
-//- Summary
-+insert_unit({unit:'561', title_slide:true, images:images})
 
-//- Grice
-+insert_unit({unit:'571', title_slide:true, images:images})
 
-//- Second view: shipwreck survivor (Bloom)
+//- syntax
++insert_unit({unit:'641', title_slide:true, images:images})
 
-//- Against the second view
+//- is knowledge of syntax knowledge?
++insert_unit({unit:'641', title_slide:true, images:images})
 
-//- Third view: social interaction
 
-//- Against the third view
+//- advertise cumberland lodge
++slide({bkg:'slide_cumberland_lodge_2014.jpg'})
 
-//- Conclusion
++slide
+  .notes Now I want to go back the main line of my plan, which calls for us to consider communication generally.
+  img(src='/img/fig_action_communicative_linguistic.png')
+

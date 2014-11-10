@@ -10,8 +10,13 @@ include ../../fragments/lecture_mixins
 
 - var images = get_images('bees')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
 
+
+//- may be too long -- now contains a bit more material!
+
+//- pointing
++insert_unit({unit:'661', title_slide:true, images:images})
 
 //- a puzzle about pointing
 +insert_unit({unit:'663', title_slide:false, images:images})
@@ -23,4 +28,5 @@ mixin title_slide({document:document, images:images})
 +insert_unit({unit:'681', title_slide:true, images:images})
 
 //- syntax: knowledge or core knowledge (short)
-+insert_unit({unit:'646', title_slide:true, images:images})
+//- moved to lecture 06
+  +insert_unit({unit:'646', title_slide:true, images:images})

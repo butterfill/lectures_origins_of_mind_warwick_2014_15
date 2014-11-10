@@ -98,6 +98,13 @@ var inject = function(){
           </div>
         </div>
       </section>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
 <div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 05}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
 <div class="notes notes-header-tex">\maketitle</div>
@@ -364,9 +371,16 @@ var inject = function(){
 <div class="handout">\section{Mindreading: First Puzzle}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
 <div class="notes notes-header-tex">\section{Mindreading: First Puzzle}</div>
+<!---->
+<!-- short form:-->
+<!--  remove_class('.blur')-->
+<!-- long forms:-->
+<!--  remove_class('.elements', 'blur')-->
+<!--  remove_class(['.el1', '.el_group_2'], 'blur')-->
+<!---->
 <section class="slide">
   <div class="container_12">
-    <div class="grid_12">
+    <div class="grid_12 ">
       <div class="words">
         <div class="middle">
           <div class="notes">There is a puzzle about when humans can first know individuating facts about others' beliefs.</div>
@@ -640,6 +654,11 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
+        <div class="notes">‘In experiment 3, we tested whether infants would correctly attribute ignorance to an 
+adult who did not know in which of the two containers her toy was and whether, in 
+contrast to the false belief conditions, infants would inform the adult about the 
+aversive objects in both locations equally.’
+        </div>
       </div>
     </div>
   </div>
@@ -838,13 +857,20 @@ var inject = function(){
           <div class="vspace-em"></div>
           <div class="huge-glow right">challenge</div>
           <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
-          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
-          <div class="notes">Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.</div>
-          <div class="notes">So a Myth of Jones style story seemed viable.</div>
-          <div class="notes">But the findings of competence in infants of around one year of age changes this.</div>
-          <div class="notes">These findings tell us that not all abilities to represent others' mental states can depend on things like language.</div>
-          <div class="notes">And, as I've been stressing, these findings also create a puzzle.</div>
-          <div class="notes">The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.</div>
+          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.
+Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.
+So a Myth of Jones style story seemed viable.
+But the findings of competence in infants of around one year of age changes this.
+These findings tell us that not all abilities to represent others' mental states can depend on things like language.
+And, as I've been stressing, these findings also create a puzzle.
+The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.
+          </div>
+          <div class="notes">*todo*: There are at least two possible puzzles you might focus on:
+1. How can we avoid the apparent contradiction in the evidence?
+2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?
+Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.
+This wasn't clear enough in the lecture (sorry!).
+          </div>
         </div>
       </div>
     </div>
@@ -858,19 +884,76 @@ var inject = function(){
         <div class="notes">But it's also different.</div>
         <div class="notes">In the case of physical objects, the conflict was between measures involving looking and measures involving searching.</div>
         <div class="notes">In this case it's different, because on the infant side there is not just looking but also acting (e.g. helping) and even communicating.</div>
-        <div class="notes">&nbsp;</div>
-        <div class="notes">*todo*: There are at least two possible puzzles you might focus on:</div>
-        <div class="notes">1. How can we avoid the apparent contradiction in the evidence?</div>
-        <div class="notes">2. How can we explain the apparent discrepancy between infants and 3-year-olds' performances?</div>
-        <div class="notes">Minimal theory of mind might resolve puzzle 1 but it won't by itself resolve puzzle 2.</div>
-        <div class="notes">This wasn't clear enough in the lecture (sorry!).</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- *todo : reveal first column from start ; add block for notes-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <table class="data">
+          <thead>
+            <tr>
+              <td>domain</td>
+              <td>evidence for knowledge in infancy</td>
+              <td>evidence against knowledge</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd case-colour slide">
+              <td>colour</td>
+              <td>categories used in learning labels & functions</td>
+              <td>failure to use colour as a dimension in ‘same as’ judgements</td>
+            </tr>
+            <tr class="even case-objects slide">
+              <td>physical objects</td>
+              <td>patterns of dishabituation and anticipatory looking</td>
+              <td>unreflected in planned action (may influence online control)</td>
+            </tr>
+            <tr class="odd case-minds slide">
+              <td>minds</td>
+              <td>reflected in anticipatory looking, communication, &c</td>
+              <td>not reflected in judgements about action, desire, ...</td>
+            </tr>
+            <tr class="even case-syntax slide">
+              <td>syntax</td>
+              <td>[to follow]</td>
+              <td>[to follow]</td>
+            </tr>
+            <tr class="odd case-number slide">
+              <td>number</td>
+              <td>[to follow]</td>
+              <td>[to follow]</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
 </section>
 <section class="slide">
   <div class="container_12">
-    <div class="grid_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>1. There are subjects who can pass A-tasks but cannot pass B-tasks.</p>
+          <p class="em-above">2. These subjects’ success on A-tasks is explained by the fact that they <span class="bold">can</span><span> </span><span class="represent">represent</span><span> (false) beliefs.</span></p>
+          <p class="em-above"> 3. These subjects’  failure on B-tasks is explained by the fact that they <span class="bold">cannot</span><span> </span><span class="represent">represent</span><span> (false) beliefs.</span></p>
+          <div data-what=" .represent" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">So we're invited to think that there may be representation in one sense but not another.
+Only the second sense is knowledge.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
       <div class="words">
         <div class="middle">
           <p class="center">Is core knowledge (modularity) the solution?</p>
@@ -1112,35 +1195,109 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section id="unit_431" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
+<section id="" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
-      <h2 class="title1">Modules and Cognitive Efficiency</h2>
+      <h2 class="title1">Essays: Evaluation</h2>
     </div>
   </div>
 </section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Modules and Cognitive Efficiency}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Modules and Cognitive Efficiency}</div>
 <section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">We can resolve both puzzles by appeal to the idea that there are modular & non-modular mindreading processes.  (Cf. physical objects).</div>
-          <p class="center">modularity</p>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/marks_2013_4.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <div class="notes">mark distribution from 2013-4</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>(2i)</p>
+        <p>high quality work demonstrating <span class="knowledge">good knowledge and understanding</span><span>, </span><span class="analysis">analysis</span><span>, </span><span class="organisation">organisation</span><span>, </span><span class="accuracy">accuracy</span><span>, </span><span class="relevance">relevance</span><span>, </span><span class="presentation">presentation </span><span>and appropriate skills" (for an Upper Second)</span></p>
+        <div data-what=" .knowledge, .accuracy" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">You've done some reading and you are demonstrating understanding by presenting
+ideas accurately.  E.g. if you are talking about object permanence, you are correctly
+specifying what that is (unlike many people in their first essay).  You can
+present both experiemntal findings and arguments in a way that allows people not 
+already familiar with them to understand them.
+A key cause of failure here is relying too heavily on recycling material from other
+courses.  It's good to make connections, of course, but relying almost entirely on
+what you learnt in Epistemology or that psychology module on language won't fly.
+        </div>
+        <div data-what=" .knowledge, .accuracy" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .presentation" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">No typos.  Accurate referencing using the Chicago style (few undergraduates can 
+correctly cite research).
+        </div>
+        <div data-what=" .presentation" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .organisation" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Sentences are coherent and not too long.  Each paragraph makes a single point.
+There is a natural transition from one to the next.  The essay as a whole has a 
+coherent structure.  The main conclusions are reviewed at the end.
+This is something where Warwick students are very strong.
+        </div>
+        <div data-what=" .organisation" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .relevance" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">The essay answers the question or questions.
+There are no extraneous ideas (I just reviewed a paper about Satre, development and 
+self-awareness).
+Every paragraph makes a significant contribution to answering the question.
+No sentence could be removed.
+        </div>
+        <div data-what=" .relevance" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .analysis" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Most important, most difficult.  
+You aren't just describing.  You are objecting to, clarifying, improving.
+        </div>
+        <div class="slide">
+          <p class="em-above">(1st)</p>
+          <div class="notes">What are the things that will get you into the first class category?</div>
+          <ol>
+            <li>full understanding</li>
+            <li>appropriate ambition</li>
+            <div class="notes">You are attempting to do something that is hard.</div>
+            <li>independent research</li>
+            <li>discovery</li>
+          </ol>
+        </div>
+        <div class="slide">
+          <p class="em-above">(module-specific)</p>
+          <div class="notes">Your work should lead to an empirically motivated philosophical conclusion</div>
+          <p>empirically motivated philosophical conclusion</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+<section id="unit_431_new" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Automaticity and Cognitive Efficiency</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Automaticity and Cognitive Efficiency}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Automaticity and Cognitive Efficiency}</div>
 <section class="slide"><img src="/img/unit_431/slide_cambridge_model_084.jpg" class="bkg"/>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">Explain how this works in the case of each puzzle.</div>
+        <div class="notes">Assuming a link between the two puzzles ... different kind of proceses and different
+kinds of representations
+        </div>
         <div class="notes">*todo* modify the slide to illustrate the solution</div>
       </div>
     </div>
@@ -1151,7 +1308,7 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <p class="center">modularity requires <span class="cognitive-efficiency">cognitive efficiency</span></p>
+          <p class="center">automaticity requires <span class="cognitive-efficiency">cognitive efficiency</span></p>
           <div data-what=" .cognitive-efficiency" data-class="invert" class="slide anim-continue anim-addclass"></div>
           <div data-what=" .cognitive-efficiency" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -1166,7 +1323,8 @@ var inject = function(){
           <div data-what=" .cognitive-efficiency" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <div class="notes">So much for cognitive efficiency.</div>
-          <div class="notes">Now why suppose that modularity (or core knowledge) requires cognitive efficiency?</div>
+          <div class="notes">Now why suppose that automaticity requires cognitive efficiency?</div>
+          <div class="notes">[*update notes!]</div>
           <div class="notes">To invoke modularity, we need to understand how mindreading could be (i) automatic and (ii) present in pre-linguistic infants with limited working memory & executive function; both (i) and (ii) mean we need to understand how it could be cognitively efficient.  (The situation is a bit like this: we want to say you can perceive others mental states; but on the face of it, mental states are exactly the sort of things that are not available to perception.)</div>
           <div class="handout">How could mindreading ever (but not always) be automatic?</div>
           <div class="handout">Representing perceptions and beliefs as such---and even merely holding in mind what another believes, where no inference is required---involves a measurable processing cost\citep{apperly:2008_back,apperly:2010_limits}, consumes attention and working memory in fully competent adults,\citealp{Apperly:2009cc, lin:2010_reflexively, McKinnon:2007rr} may require inhibition\citep{bull:2008_role} and makes demands on executive function.\citep{apperly:2004_frontal,samson:2005_seeing}</div>
@@ -1238,7 +1396,7 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section id="unit_441" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+<section id="unit_441" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
@@ -1384,7 +1542,7 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section id="unit_451" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
+<section id="unit_451" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">

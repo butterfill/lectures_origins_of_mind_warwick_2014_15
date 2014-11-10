@@ -11,7 +11,159 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/compatibility_mixins
+
+
+
+
+
+
+//-
+  Following bit is from 601_milan
+  Needs integrating with what follows
+
+
+                    
++slide_middle
+  .notes: :t()
+    As a sort of aside, I might mention for anyone familiar with Fodor on modularity 
+    that core systems basically coincide modules.
+  p.center core system vs module
+  
+section.slide
+  .notes Aside: compare the notion of a core system with the notion of a module
+  .notes The two definitions are different, but the differences are subtle enough that we don't want both.
+  .notes My recommendation: if you want a better definition of core system, adopt core system = module as a working assumption and then look to research on modularity because there's more of it.
+  .notes An example contrasting Grice and Davidson on the wave.
+  .handout \subsection{Compare modularity}
+  .handout Modules are ‘the psychological systems whose operations present the world to thought’; 
+    | they ‘constitute a natural kind’; and 
+    | there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+  .handout These properties include:
+  .handout \begin{itemize}
+  .handout \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+  .handout \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+  .handout \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+  .handout \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+  .handout \end{itemize}
+  .words: .container_12: .grid_5
+    p ‘core systems are 
+      ol
+        li: span.innate largely innate, 
+        li
+          span.encapsulated  encapsulated
+          span , and 
+        li: span  unchanging, 
+        li: span  arising from phylogenetically old systems 
+        li: span  built upon the output of innate perceptual analyzers’ 
+    p.right (Carey and Spelke 1996: 520)
+  .slide
+    .right-half-white
+      .words: .container_12: .grid_6
+        div(style='padding-right:1em;')
+          p Modules are ‘the psychological 
+            span.present-the-world(style='z-index:0;') systems whose operations present the world to thought
+            span ’; 
+            | they ‘constitute a natural kind’; and 
+            | there is ‘a cluster of properties that they have in common’
+          ol
+            li: span.innate(style='z-index:0;')  innateness 
+            li: span.encapsulated(style='z-index:0;')  information encapsulation 
+            li: span  domain specificity 
+            li: span  limited accessibility 
+            li: span  ...
+    +highlight('.innate', 'pink')
+    +highlight('.encapsulated', 'blue')
+    +highlight('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
+
+  
++slide_middle
+  p.center.notes.show But is the notion of core system (or module) explanatory?
+
+
+
+
+      
++slide_middle
+  .notes The feature we most need is actually missing from their list.
+  p.center If this is what core knowledge is for, what features must core knowledge have?
+  p.em-above.center
+    span.bkg-words-highlight-invert limited accessibility to knowledge
+  .notes To say that a system or module exhibits limited accessibility is to say that the representations in the system are not usually inferentially integrated with knowledge.
+  .notes I think this is the key feature we need to assign to core knowledge in order to explain the apparent discrepancies in the findings about when knowledge emerges in development.
+
+section.slide
+  .notes Limited accessbility is a familar feature of many cognitive systems.
+  .notes When you grasp an object with a precision grip, it turns out that there is a very reliable pattern.
+  .notes At a certain point in moving towards it your fingers will reach a maximum grip aperture which is normally a certain amount wider than the object to be grasped, and then start to close.
+  .notes Now there's no physiological reason why grasping should work like this, rather than grip hand closing only once you contact the object.
+  .notes Maximum grip aperture shows anticipation of the object: the mechanism responsible for guiding your action does so by representing various things including some features of the object.
+  .notes But we ordinarily have no idea about this.
+  .notes The discovery of how grasping is controlled depended on high speed photography.
+  .notes This is an illustration of limited accessibility.
+  .notes (This can also illustrate information encapsulation and domain specificity.)
+  .container_12
+    .grid_4
+      .words
+        p maximum grip aperture
+        p.right (source: Jeannerod 2009, figure 10.1)
+    .grid_8
+      img(src='/img/jeannerod_2009_fig10-1.png', style='max-height:600px;')
+
+
++slide
+  .notes To sum up, there are two problems with the notion of core knowledge ...
+  .notes.show 
+    p core systems -- questions:
+    ol
+      li Is appealing to core systems (modules) explanatory?
+      li Can the Core Knowledge View explain the discrepancy?
+      li Is the view I've been developing consistent with the Core Knowledge View?
+      li Is core knowledge all one thing?
+      li How do you get from core knowledge to knowledge knowledge?
+  .notes: :t()
+    The Core Knowledge View is the view that infants' competence with objects, causes, colours
+    and the rest depends not on knowledge (as the Simple View has it) but on core knowledge.
+  .notes: :t()
+    On the first question, I could tell you a long story about computational processes and 
+    representational formats.  But I won't do that here.
+  .notes: :t()
+    On the second question, I think the answer is probably yes because the difference in
+    representational formats between knowledge proper and core knowledge explains limited
+    accessibility, and this in turn partially explains the discrepancies.
+    (But note that it doesn't explain is why the discrepacies fall exactly where they do.)
+  .notes: :t()
+    On the third question, I think that thinking about categorical perception, or the perceptual 
+    systems that underpin objects indexes is a way of getting at what core knowledge really 
+    involves.  Core systems are not always something over and above perceptual and motor systems
+    (although it seems probably that they sometimes are if our competence with syntax rests on 
+    core knowledge).
+  .notes: :t()
+    On the fourth question,
+    Most people are committed to there being different stories for (a) colour (categorical 
+    perception); (b) syntax (tacit knowledge); and (c) physical objects.
+    I'm not sure. I'm tempted to think that perceptual and motor cognition are at the root of these 
+    in every case, but this is a radical idea for which there is currenly very little evidence.
+  .notes: :t()
+    The fifth question is just a variant of what I called The Problem (see lecture 2; it arises 
+    from the failure of the Simple View).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-
+    This is the old start of 231 (which repeats some of 601_warwick)
 
 
 
