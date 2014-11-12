@@ -847,15 +847,18 @@ only toggle the notes panel for this cloned window.
 
 		
   });
-    
+  
+  var $notesContainer;
 	$d.bind('deck.change', function(e, from, to) {
 		//show notes for current slide
     var slideTo = $[deck]('getSlide', to);
-		var $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
+    if( typeof($notesContainer) === 'undefined' ) {
+      $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
+  		$('.divider, .notes-header, .notes-header-tex', $notesContainer).hide();
+    }
 		$('.notes', $notesContainer).hide();
-		$('.divider, .notes-header, .notes-header-tex', $notesContainer).hide();
 		var slide_id = $(slideTo).attr('id');
-		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex');
+		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex').not('.divider');
 		$notes.show();
     });
 

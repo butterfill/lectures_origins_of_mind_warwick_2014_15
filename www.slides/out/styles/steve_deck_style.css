@@ -672,6 +672,9 @@ td,
   list-style: circle;
   padding-bottom: 0.1em;
 }
+.deck-container ul.no-bullet li {
+  list-style: none;
+}
 .deck-container .center table {
   margin: 0 auto;
 }

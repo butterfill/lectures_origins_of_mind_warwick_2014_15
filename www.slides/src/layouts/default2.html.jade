@@ -39,9 +39,6 @@
 - scripts.add(["/vendor/deck.js/deck.events.js"])
 - scripts.add(["/vendor/deck.js/deck.anim.js"])
 
-//- deck js extension to help with deckjs-remote (this extension just triggers the main extension)
-- scripts.add(["/vendor/deck.js/deck.remote.js"])
-
 //- effects 
 - scripts.add(["/vendor/jquery.jsPlumb-1.3.16-all-min.js"])
 
@@ -53,8 +50,10 @@
 - styles.add(["/styles/steve_deck_style.css"])
 
 //- deckjs-remote
-- styles.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.css"])
-- scripts.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.js"])
+  //- deck js extension to help with deckjs-remote (this extension just triggers the main extension)
+  - scripts.add(["/vendor/deck.js/deck.remote.js"])
+  - styles.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.css"])
+  - scripts.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.js"])
 
 
 html

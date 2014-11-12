@@ -140,6 +140,11 @@ mixin display_images_as_slides(unit)
 //- mixins to create elements
 //- -------------
 
+mixin img(filename,style)
+  if typeof(style) === 'undefined'
+    - style = ''
+  img(src='/img/#{filename}',style=style)
+
 //- see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
   if typeof(theClip) === 'undefined'
@@ -162,12 +167,25 @@ mixin anim_end()
   .slide.anim-addclass(data-what="#notanelement", data-class="")
 
 
+//- modify a html attribute (e.g. src on an img element)
+mixin attr_(what, theAttr)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-style(data-what="#{thing}", data-attr="#{theAttr}")
+mixin attr(what, theAttr)
+  +attr_(what, theAttr)
+  +anim_end()
+
+
 //- clip an image
-mixin clip(what, theClip)
+mixin clip_(what, theClip)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="clip:#{theClip}")
+mixin clip(what, theClip)
+  clip_(what, theClip)
   +anim_end()
 
 
@@ -405,6 +423,24 @@ mixin highlight-remove-all_(what, container)
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-*")
 mixin highlight-remove-all(what, container)
   +highlight-remove-all_(what, container)
+  +anim_end()
+
+mixin glow_(what)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="glow-border")
+mixin glow(what)
+  +glow_(what)
+  +anim_end()
+
+mixin unglow_(what)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="glow-border")
+mixin unglow(what)
+  +glow_(what)
   +anim_end()
 
 

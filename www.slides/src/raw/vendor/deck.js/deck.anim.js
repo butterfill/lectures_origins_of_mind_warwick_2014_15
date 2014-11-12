@@ -16,17 +16,19 @@
         selectors: {
             animShow: ".anim-show",
             animHide: ".anim-hide",
-			//* added
-			animCollapse : ".anim-collapse",
-			//* added
-			animFade : ".anim-fade",
-			//* added
-			animConnect: ".anim-connect",
-			//* added
-			animRun: ".anim-run",
+      			//* added
+      			animCollapse : ".anim-collapse",
+      			//* added
+      			animFade : ".anim-fade",
+      			//* added
+      			animConnect: ".anim-connect",
+      			//* added
+      			animRun: ".anim-run",
             animAddClass: ".anim-addclass",
             animRemoveClass: ".anim-removeclass",
             animAttribute: ".anim-attribute",
+      			//* added
+            animStyle: ".anim-style",
             // specific ones
             animPlay: ".anim-play",
             animPause: ".anim-pause",
@@ -222,7 +224,7 @@
                 }
             }
         });
-		// modified by steve so doesn't animate but simply adds or removes elements
+		    // modified by steve so doesn't animate but simply adds or removes elements
         classical(o.selectors.animAttribute, {
             init: function(c) {
                 c.previousElement = [];
@@ -241,10 +243,38 @@
                 var key = c.attribute();
                 c.previousCss = [];
                 c.previousElement = [];
-                c.all().each( function(){c.previousElement.push(this); c.previousCss.push($(this).css(key))}) // save a list of elements and values
+                c.all().each( function(){
+                    c.previousElement.push(this); 
+                    c.previousCss.push($(this).css(key))}) // save a list of elements and values
                 var whatTo = {}
                 whatTo[key] = c.value()
                 c.all().css(whatTo)
+            },
+            fast: function(c) {this.doit(c,0)}
+        });
+        classical(o.selectors.animStyle, {
+            init: function(c) {
+                c.previousElementStyle = [];
+                c.previousStyle = [];
+            },
+            undo: function(c) {
+                var key = c.attribute()
+                for (i in c.previousElementStyle) { // use the saved list of elements and values
+                    var whatTo = {};
+                    whatTo[key] = c.previousStyle[i];
+                    $(c.previousElementStyle[i]).attr(whatTo);
+                }
+            },
+            doit: function(c, factor) {
+                var key = c.attribute();
+                c.previousStyle = [];
+                c.previousElementStyle = [];
+                c.all().each( function(){
+                    c.previousElementStyle.push(this); 
+                    c.previousStyle.push($(this).attr(key))}) // save a list of elements and values
+                var whatTo = {}
+                whatTo[key] = c.value()
+                c.all().attr(whatTo)
             },
             fast: function(c) {this.doit(c,0)}
         });
