@@ -185,7 +185,7 @@ mixin clip_(what, theClip)
   each thing in what
     .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="clip:#{theClip}")
 mixin clip(what, theClip)
-  clip_(what, theClip)
+  +clip_(what, theClip)
   +anim_end()
 
 
