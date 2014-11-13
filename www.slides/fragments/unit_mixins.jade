@@ -56,14 +56,25 @@ mixin middle(p)
       .words: .middle
         block
 
+mixin _slide_middle_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('bkg' in p)
+    img.bkg(src='/img/#{p.bkg}')
+  +middle
+    block
+
 mixin slide_middle(p)
-  section.slide
-    if typeof(p) === 'undefined'
-      - p = {}
-    if ('bkg' in p)
-      img.bkg(src='/img/#{p.bkg}')
-    +middle
-      block
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('id' in p)
+    section.slide(id="#{p.id}")
+      +_slide_middle_inner(p)
+        block
+  else
+    section.slide
+      +_slide_middle_inner(p)
+        block
 
 //- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
 mixin slide_img(filename)
@@ -178,6 +189,17 @@ mixin attr(what, theAttr)
   +anim_end()
 
 
+//- edit inline style
+mixin style_(what, theStyleString)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="#{theStyleString}")
+mixin style(what, theStyleString)
+  +style_(what, theStyleString)
+  +anim_end()
+
+
 //- clip an image
 mixin clip_(what, theClip)
   if typeof(what)==='string'
@@ -254,23 +276,14 @@ mixin line-through(what)
 //- param what is a string or an array of jquery identifiers
 //- param scope (optional) is a seclector that specifies where to look for the what
 mixin show_(what,scope)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide",data-scope="#{scope ? scope : ''}")
-
+  .slide.anim-continue.anim-removeclass(data-what="#{what}",data-class="hide",data-scope="#{scope ? scope : ''}")
 mixin show(what,scope)
-  +show_(what,scope)
-  +anim_end()
+  .slide.anim-removeclass(data-what="#{what}",data-class="hide",data-scope="#{scope ? scope : ''}")
   
 mixin hide_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="hide")
+  .slide.anim-addclass(data-what="#{what}",data-class="hide")
 mixin hide(what)
-  +hide_(what)
-  +anim_end()
+  .slide.anim-addclass(data-what="#{what}",data-class="hide")
 
 mixin collapse_(what, speed)
   if typeof(what)==='string'
@@ -286,13 +299,9 @@ mixin collapse(what, speed)
 
 
 mixin remove_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="remove-me")
+  .slide.anim-continue.anim-addclass(data-what="#{what}",data-class="remove-me")
 mixin remove(what)
-  +remove_(what)
-  +anim_end()
+  .slide.anim-addclass(data-what="#{what}",data-class="remove-me")
 
 
 mixin unremove(what)
@@ -356,22 +365,14 @@ mixin unfade(what, dur)
 
 
 mixin invert_(what, container)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-invert")
+  .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{what}",data-class="bkg-words-highlight-invert")
 mixin invert(what, container)
-  +invert_(what, container)
-  +anim_end()
+  .slide.anim-addclass(data-what="#{container ? container : ''} #{what}",data-class="bkg-words-highlight-invert")
 
 mixin uninvert_(what, container)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="bkg-words-highlight-invert")
+  .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{what}", data-class="bkg-words-highlight-invert")
 mixin uninvert(what, container)
-  +uninvert_(what, container)
-  +anim_end()
+  .slide.anim-removeclass(data-what="#{container ? container : ''} #{what}", data-class="bkg-words-highlight-invert")
 
 mixin highlight_(what, color, container)
   if typeof(what)==='string'

@@ -453,7 +453,8 @@ that use the API provided by core.
 		
 		keys: {
 			// enter, space, page down, right arrow, down arrow,
-			next: [13, 32, 34, 39, 40],
+			// next: [13, 32, 34, 39, 40],
+      next: 39,
 			// backspace, page up, left arrow, up arrow
 			previous: [8, 33, 37, 38]
 		},

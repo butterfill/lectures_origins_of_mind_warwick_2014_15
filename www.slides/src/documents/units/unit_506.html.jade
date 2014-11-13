@@ -5,7 +5,7 @@ tags: []
 description: "There are two main views about how humans first come to communicate with words.  Both are wrong."
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
 
 +slide
     .handout \subsection{How do children acquire words?}
@@ -37,17 +37,20 @@ section.slide
               p.handout.show ‘[t]he child learns this language from the grown-ups by being trained to its use. I am using the word ‘trained’ in a way strictly analogous to that in which we talk of an animal being trained to do certain things. It is done by means of example, reward, punishment, and suchlike’
               .handout.ctd \citep[p.\ 77]{Wittgenstein:1972lj}
               p.right (Wittgenstein 1972, p. 77).
-            mixin showremove('.step3','.step2')
+            +remove_('.step2')
+            +show('.step3')
             .step4.hide
               p.handout.show ‘the child’s early learning of a verbal response depends on society's reinforcement of the response in association with the stimulations that merit the response’
               .handout.ctd (\citep[p.\ 82]{Quine:1960fe}; compare \citep[pp.\ 28--9]{Quine:1974rd})
               p.right (Quine 1960, p. 82)
-            mixin showremove('.step4','.step3')
+            +remove_('.step3')
+            +show('.step4')
             .step5.hide
               p.handout.show ‘A child learning to speak is learning habits and associations which are just as much determined by the environment as the habit of expecting dogs to bark and cocks to crow’
               .handout.ctd \citep[p.\ 71]{Russell:1921ww}
               p.right (Russell 1921, p. 71).
-            mixin showremove('.step5','.step4')
+            +remove_('.step4')
+            +show('.step5')
 
 +slide_middle
   .notes: :t()
