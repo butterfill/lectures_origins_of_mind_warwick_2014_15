@@ -28,7 +28,7 @@ mixin _slide_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}')
+    img.bkg(src='/img/#{p.bkg}', width='1024px')
   .words
     .container_12: .grid_12
       block
@@ -60,7 +60,7 @@ mixin _slide_middle_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}')
+    img.bkg(src='/img/#{p.bkg}', width='1024px')
   +middle
     block
 

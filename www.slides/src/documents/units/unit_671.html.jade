@@ -75,7 +75,7 @@ include ../../../fragments/origins_mixins
     +highlight('.intention','pink')
     .notes Note that, on this Gricean view, communicating involves having intentions about intentions.m
 
-+slide
++slide({id:'unit_671_gricean_communication'})
   .handout \subsection{A Gricean view}
   p
     span.notes.handout.show First approximation: To communicate is to provide someone with evidence of an intention with the further intention of thereby fulfilling that intention
@@ -111,12 +111,37 @@ include ../../../fragments/origins_mixins
     p.right (Compare Grice 1967 p. 151; Neale 1992 p. 544)
     .handout \end{enumerate}
     .handout (compare \citealp[p.\ 151]{Grice:1969pv}; \citealp[p.\ 544]{Neale:1992uw})
-    +highlight('.attitude1')
-    +highlight('.attitude2', 'blueviolet')
-    +highlight('.attitude3', 'orange')
-    +highlight('.attitude4', 'red')
-    +blur('.step2')
-    .notes So to mean something by pointing, you have to have to have an intention about my recognition of an intention of yours concerning my reasons.
+
+
+
+
++slide_rh_white({step:false})
+  +run_across
+    p.center Informative pointing
+  +left_half
+    +to_comprehend
+  +right_half({step:false})
+    +to_produce
+  +invert('.know, .communicate')
+  .notes: :t()
+    Earlier we noted that both comprehending and producing require knowing things 
+    about communication.  Our question was then, What is communication?
+  .notes: :t()
+    The Gricean view we've just seen is an answer to this question.
+    But is it a good answer?
+  
+
+
+
+
+section.slide
+  .slide-clone(data-which='#unit_671_gricean_communication')
+  +highlight('.attitude1')
+  +highlight('.attitude2', 'blueviolet')
+  +highlight('.attitude3', 'orange')
+  +highlight('.attitude4', 'red')
+  +blur('.step2')
+  .notes So to mean something by pointing, you have to have to have an intention about my recognition of an intention of yours concerning my reasons.
 
 mixin slide_the_question()
   +question_mark
@@ -207,6 +232,20 @@ mixin slide_the_question()
   .notes What are the alternatives?
   .notes I want to mention two alternatives ...
 
+
+
+
++slide_rh_white({step:false})
+  +run_across
+    p.center Informative pointing
+  +left_half
+    +to_comprehend
+  +right_half({step:false})
+    +to_produce
+  +invert('.know, .communicate')
+  .notes: :t()
+    We are looking for alternatives to the Gricean characterisation of communication,
+    alternatives that will provide us with a less complicated notion of pointing.
 
 +slide_middle
   p.center first alternative
@@ -325,11 +364,13 @@ mixin slide_the_question()
   p.center intention to refer
 
 
++slide_middle
+  p.center Conclusions
+
 +slide
-  p Conclusion for What is a communicative action?
+  p How do infants understand pointing?
   .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
-  p.em-above Should we accept that pointing (and linguistic communication) involves intentions about intentions?
-  ol.slide
+  ol.slide.em-above 
     li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
     li.slide But there are alternatives to the Gricean story.
     li.slide If Davidson’s
@@ -344,7 +385,7 @@ mixin slide_the_question()
     .notes We have to say what meaning or reference is such that infants understand it.  I want to leave this as an open problem.  When we talk about action next time I'll provide a model for dealing with this sort of problem.
     
 +slide
-  p Conclusion for Pointing
+  p What do we know about pointing?
   ol
     li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
     li.slide ... and they can understand these kinds of pointing gesture.

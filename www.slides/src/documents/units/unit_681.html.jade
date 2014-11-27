@@ -12,6 +12,8 @@ exercises_fast: []
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
 
 mixin slide_pointing-vs-linguistic(p)
   - p = p || {step:true}
@@ -63,7 +65,28 @@ mixin slide_pointing-vs-linguistic(p)
         .notes This was brought out drammatically by the Hare and Tomasello task I mentioned earlier ...
     block
 
-+slide_pointing-vs-linguistic
+
+//-
+  +slide_pointing-vs-linguistic
+
+
++slide_rh_white({step:true})
+  +left_half
+    p.center pointing
+    +to_comprehend
+  +right_half({step:true})
+    p.center one-word utterance
+    p To comprehend:
+    ol
+      li know that this person is gesturing to object X;
+      li know that by so gesturing she is attempting to communicate; 
+      li 
+        span.associate associate word with property F
+        span ; and
+      li know that she is attempting to communicate that X is F.
+    +highlight('.associate')
+
+
 
 +slide
   .notes Recall this experiment in which Hare and Call (\citeyear{hare_chimpanzees_2004}) contrast pointing with a failed reach as two ways of indicating which of two closed containers a reward is in.  Chimps can easily interpret a failed reach but are stumped by the point to a closed container.
@@ -86,11 +109,26 @@ mixin slide_pointing-vs-linguistic(p)
   img(src='/img/tincoff_2011_fig2.png')
   p.source Tincoff and Jusczyk 2011, figure 1
 
-+slide_pointing-vs-linguistic({step:false})
+//- +slide_pointing-vs-linguistic({step:false})
++slide_rh_white({step:false})
+  +left_half
+    p.center pointing
+    +to_comprehend
+  +right_half
+    p.center one-word utterance
+    p To comprehend:
+    ol
+      li know that this person is gesturing to object X;
+      li know that by so gesturing she is attempting to communicate; 
+      li associate word with property F; and
+      li know that she is attempting to communicate that X is F.
   .notes Recall our simple description of what is involved in communication.
-  +invert('.referent:eq(0)')
-  .notes What I'm suggesting is two very simple ideas.  First, to be able to associate pointing gestures with their referents is not sufficient for understanding them;  second, basic the pointing-referent associations may be grasped by non-communicators.
+  //- +invert('.referent:eq(0)')
+  .notes: :t()
+    What I'm suggesting is two very simple ideas.  First, to be able to associate pointing 
+    gestures with their referents is not sufficient for understanding them;  second, basic 
+    the pointing-referent associations may be grasped by non-communicators.
   .notes (Here the 'basic' qualifier is there because in some cases deciding on the referent may involve thinking about the agent and recepient, their knowledge and intentions.)
-  +invert('.associate-word')
+  //- +invert('.associate-word')
   .notes And likewise for the case of linguistic communication.
   
