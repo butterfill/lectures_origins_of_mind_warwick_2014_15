@@ -3,17 +3,43 @@ layout: 'default2'
 title: 'Lecture 09'
 weburl: ''
 units: [] 
-lecture_date: '2013/12/04'
+lecture_date: '2014/12/03'
 ---
 
 include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/origins_mixins
 
 - var images = get_images('bees')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
+
+
+
+//- models, systems and the Emergence Challenge
++insert_unit({unit:'995', title_slide:true, images:images})
+
+
+
++section({images:images, title:'Action'})
+
+//- from origins mixins
++slide_diagram_core_knowledge_to_concept
+
++slide
+  img(src='/img/fig_action_communicative_linguistic.png')
+  .notes: :t()
+    We asked about linguistic communication and didn't get a good answer.
+    So we asked about non-linguistic communication and still didn't get a good answer.
+    (There the problem was a divide between mere use (in the 'block-slab' sense) and
+    a Grice-inspired view of communication as involving a nested structure of knowledge and intention.)
+  .notes: :t()
+    So let's go back one step further to action and see if that helps.
+
+    
 
 //- action
-+insert_unit({unit:'701', title_slide:false, images:images})
++insert_unit({unit:'701', title_slide:true, images:images})
 
 //- how do infants model actions?
 +insert_unit({unit:'706', title_slide:true, images:images})
@@ -27,7 +53,7 @@ mixin title_slide({document:document, images:images})
 //- problems for the teleological stance?
 //- NB : this was cut from Milan; should probably go from here too
 //- NB some of this has been merged with unit 712 !!
-+insert_unit({unit:'731', title_slide:true, images:images})
+//- +insert_unit({unit:'731', title_slide:true, images:images})
 
 +insert_unit({unit:'741', title_slide:true, images:images})
 
