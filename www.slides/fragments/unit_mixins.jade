@@ -281,7 +281,7 @@ mixin show(what,scope)
   .slide.anim-removeclass(data-what="#{what}",data-class="hide",data-scope="#{scope ? scope : ''}")
   
 mixin hide_(what)
-  .slide.anim-addclass(data-what="#{what}",data-class="hide")
+  .slide.anim-continue.anim-addclass(data-what="#{what}",data-class="hide")
 mixin hide(what)
   .slide.anim-addclass(data-what="#{what}",data-class="hide")
 

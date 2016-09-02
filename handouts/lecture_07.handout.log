@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  19 SEP 2014 16:50
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.11.28)  13 NOV 2014 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1079,48 +1079,30 @@ LaTeX Info: Redefining \nameref on input line 30.
 \openout3 = `lecture_07.handout.out'.
 
 LaTeX Info: Redefining \Ref on input line 30.
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 92.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-\EU1/LinuxLibertineO(0)/m/n/12 et al.[] []2008a[], []2010a[]), consumes attenti
-on
+] [2] [3]
+(./lecture_07.handout.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
+[]\EU1/LinuxLibertineO(0)/m/n/10 Russell, B. (1921).  \EU1/LinuxLibertineO(0)/m
+/it/10 The Analysis of Mind\EU1/LinuxLibertineO(0)/m/n/10 .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-\EU1/LinuxLibertineO(0)/m/n/12 and working memory in fully competent
- []
-
-[1
-
-]
-File: fig/signature_limits_table.png Graphic file (type QTm)
- <use  "fig/signature_limits_table.png" >
-File: fig/low_2012_fig.png Graphic file (type QTm)
- <use  "fig/low_2012_fig.png" >
-(./lecture_07.handout.bbl [2]
-Underfull \hbox (badness 5446) in paragraph at lines 168--172
-[]\EU1/LinuxLibertineO(0)/m/n/10 Samson, D., Apperly, I., Kathirgamanathan, U.,
- &
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+) [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
  (./lecture_07.handout.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 177.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 269.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
  ) 
 Here is how much of TeX's memory you used:
- 23822 strings out of 493938
- 455762 string characters out of 6148856
- 494361 words of memory out of 5000000
- 26852 multiletter control sequences out of 15000+600000
- 8139 words of font info for 56 fonts, out of 8000000 for 9000
+ 23787 strings out of 493938
+ 455054 string characters out of 6148856
+ 503727 words of memory out of 5000000
+ 26834 multiletter control sequences out of 15000+600000
+ 4889 words of font info for 42 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 48i,5n,80p,667b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,5n,80p,667b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lecture_07.handout.pdf (3 pages).
+Output written on lecture_07.handout.pdf (4 pages).
